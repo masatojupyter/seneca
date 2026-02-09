@@ -77,7 +77,3 @@ Modern payroll management system powered by XRP Ledger. Track employee time, man
 ## 📄 License
 
 Private project - All rights reserved
-
-## 🤝 Contributing
-
-This is a private project. Please contact the maintainer for contribution guidelines.
