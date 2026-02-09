@@ -1,0 +1,1060 @@
+{
+  "language": {
+    "label": "言語",
+    "english": "English",
+    "japanese": "日本語",
+    "switchTo": "言語を切り替え"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "add": "追加",
+    "update": "更新",
+    "search": "検索",
+    "details": "詳細",
+    "confirm": "確認",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "submit": "送信",
+    "execute": "実行",
+    "executing": "実行中...",
+    "comingSoon": "近日公開",
+    "unexpectedError": "予期しないエラーが発生しました",
+    "actions": "操作",
+    "status": "ステータス",
+    "date": "日付",
+    "time": "時刻",
+    "memo": "メモ",
+    "amount": "金額",
+    "name": "名前",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "today": "今日",
+    "thisMonth": "今月",
+    "lastMonth": "先月",
+    "year": "年",
+    "month": "月",
+    "hours": "時間",
+    "minutes": "分",
+    "items": "件",
+    "people": "人",
+    "active": "有効",
+    "inactive": "無効",
+    "activate": "有効にする",
+    "deactivate": "無効にする",
+    "enabled": "有効",
+    "disabled": "無効",
+    "default": "デフォルト",
+    "optional": "任意",
+    "required": "必須",
+    "selectPlease": "選択してください",
+    "noData": "データがありません",
+    "notSet": "未設定",
+    "hide": "非表示",
+    "show": "表示",
+    "deleted": "削除済み",
+    "xrp": "XRP",
+    "rlusd": "RLUSD",
+    "usd": "USD",
+    "admin": "管理者",
+    "worker": "従業員",
+    "employee": "従業員"
+  },
+  "auth": {
+    "login": {
+      "title": "ログイン",
+      "adminTitle": "管理者ログイン",
+      "workerTitle": "従業員ログイン",
+      "loginAsAdmin": "管理者としてログイン",
+      "loginAsWorker": "従業員としてログイン",
+      "emailPlaceholder": "メールアドレスを入力",
+      "passwordPlaceholder": "パスワードを入力",
+      "organizationId": "組織ID（任意）",
+      "organizationIdHint": "複数の組織に所属している場合のみ入力",
+      "organizationIdNote": "省略した場合、最初に一致した組織でログインします",
+      "loginFailed": "ログインに失敗しました",
+      "invalidCredentials": "メールアドレスまたはパスワードが正しくありません",
+      "tryAgain": "ログインに失敗しました。もう一度お試しください。"
+    },
+    "logout": {
+      "button": "ログアウト",
+      "failed": "ログアウトに失敗しました"
+    },
+    "validation": {
+      "invalidEmail": "有効なメールアドレスを入力してください",
+      "passwordMin": "パスワードは8文字以上で入力してください"
+    }
+  },
+  "registration": {
+    "title": "管理者登録",
+    "subtitle": "新しい組織を作成して始めましょう",
+    "organizationName": "組織名",
+    "organizationNamePlaceholder": "株式会社サンプル",
+    "yourName": "お名前",
+    "yourNamePlaceholder": "山田 太郎",
+    "passwordConfirm": "パスワード（確認）",
+    "passwordHint": "8文字以上で入力してください",
+    "registerButton": "登録",
+    "registrationComplete": "登録が完了しました。確認メールを送信しました。",
+    "redirectingToLogin": "3秒後にログインページへリダイレクトします...",
+    "registrationFailed": "登録に失敗しました",
+    "tryAgain": "登録に失敗しました。もう一度お試しください。",
+    "passwordMismatch": "パスワードが一致しません",
+    "alreadyHaveAccount": "既にアカウントをお持ちの方はこちらからログイン",
+    "nameRequired": "名前を入力してください",
+    "organizationRequired": "組織名を入力してください"
+  },
+  "verifyEmail": {
+    "title": "メール認証",
+    "invalidLink": "無効な認証リンクです。メールのリンクを再度クリックしてください。",
+    "verificationComplete": "メール認証が完了しました",
+    "accountActivated": "アカウントが有効化されました。ログインしてダッシュボードにアクセスできます。",
+    "redirectingIn": "{seconds}秒後にログインページへリダイレクトします...",
+    "loginNow": "今すぐログイン",
+    "verificationFailed": "認証に失敗しました",
+    "goToRegistration": "登録ページへ",
+    "tokenNotSpecified": "認証トークンが指定されていません",
+    "tryAgain": "メール認証に失敗しました。もう一度お試しください。"
+  },
+  "invitation": {
+    "title": "従業員招待",
+    "subtitle": "アカウントを作成して始めましょう",
+    "sendInvitation": "招待を送信",
+    "hourlyRate": "時給（USD）",
+    "invitationSent": "招待を送信しました。",
+    "invitationToken": "招待トークン: {token}",
+    "devNote": "（開発環境のため表示。通常はメールで送信されます）",
+    "sendFailed": "招待の送信に失敗しました",
+    "acceptInvitation": "招待を承認",
+    "createAccount": "アカウント作成",
+    "accountCreated": "アカウントが作成されました。",
+    "acceptFailed": "招待の承認に失敗しました",
+    "list": {
+      "title": "招待一覧",
+      "empty": "招待がありません。",
+      "invitedDate": "招待日",
+      "expiresAt": "有効期限",
+      "pending": "保留中",
+      "accepted": "承認済み",
+      "expired": "期限切れ",
+      "resend": "再送信",
+      "resending": "再送信中...",
+      "cancelInvitation": "招待をキャンセル",
+      "cancelConfirm": "この招待をキャンセルしますか？キャンセルした招待は復元できません。",
+      "getFailed": "招待一覧の取得に失敗しました",
+      "cancelFailed": "招待のキャンセルに失敗しました",
+      "resendFailed": "招待の再送信に失敗しました"
+    },
+    "validation": {
+      "tokenRequired": "トークンは必須です",
+      "hourlyRatePositive": "時給は0より大きい値を入力してください"
+    }
+  },
+  "admin": {
+    "sidebar": {
+      "main": "メイン",
+      "dashboard": "ダッシュボード",
+      "management": "管理",
+      "workerManagement": "従業員管理",
+      "applicationManagement": "申請管理",
+      "paymentManagement": "支払い管理",
+      "hashSearch": "ハッシュ検索",
+      "settings": "設定",
+      "organizationSettings": "組織設定",
+      "cryptoSettings": "暗号資産設定"
+    },
+    "dashboard": {
+      "title": "ダッシュボード",
+      "subtitle": "組織の概要と最近のアクティビティ",
+      "statsError": "統計情報の取得に失敗しました:",
+      "activityError": "アクティビティ履歴の取得に失敗しました:"
+    },
+    "stats": {
+      "totalWorkers": "従業員数",
+      "activeWorkers": "アクティブ: {count}名",
+      "pendingApplications": "保留中の申請",
+      "applicationsThisMonth": "今月: {count}件",
+      "pendingPayments": "保留中の支払い",
+      "paymentsThisMonth": "今月: {count}件",
+      "totalPaymentsThisMonth": "今月の総支払額"
+    },
+    "recentActivities": {
+      "title": "最近のアクティビティ",
+      "empty": "アクティビティ履歴がありません",
+      "application": "申請",
+      "payment": "支払い"
+    },
+    "login": {
+      "title": "管理者ログイン",
+      "subtitle": "Seneca 管理パネル",
+      "registerLink": "新しい組織を登録する"
+    }
+  },
+  "worker": {
+    "sidebar": {
+      "main": "メイン",
+      "dashboard": "ダッシュボード",
+      "applicationList": "申請一覧",
+      "attendancePayment": "勤怠・支払い",
+      "timesheet": "タイムシート",
+      "paymentReceive": "給与受領",
+      "hashSearch": "ハッシュ検索",
+      "settings": "設定",
+      "wallet": "ウォレット",
+      "profile": "プロフィール",
+      "companyInfo": "会社情報"
+    },
+    "login": {
+      "title": "従業員ログイン",
+      "subtitle": "Seneca理システム",
+      "createAccountHint": "招待メールからアカウントを作成してください"
+    },
+    "dashboard": {
+      "title": "ダッシュボード",
+      "subtitle": "勤務時間を打刻する",
+      "timestamp": "打刻",
+      "timestampHistory": "打刻履歴"
+    },
+    "profile": {
+      "title": "プロフィール編集",
+      "subtitle": "プロフィール情報を編集する",
+      "basicInfo": "基本情報",
+      "profileNotFound": "プロフィールが見つかりません",
+      "getFailed": "プロフィールの取得に失敗しました",
+      "updateSuccess": "プロフィールを更新しました",
+      "updateFailed": "更新に失敗しました",
+      "emailReadonly": "メールアドレスは変更できません",
+      "hourlyRateReadonly": "時給は管理者のみ変更できます"
+    },
+    "settings": {
+      "title": "設定",
+      "subtitle": "各種設定を管理する",
+      "walletSection": "受取アドレス",
+      "walletDescription": "XRP受取アドレスを設定する",
+      "profileSection": "プロフィール編集",
+      "profileDescription": "名前やプロフィール情報を編集する",
+      "companySection": "会社情報",
+      "companyDescription": "所属する組織の情報を確認する"
+    }
+  },
+  "workers": {
+    "title": "従業員管理",
+    "subtitle": "組織の従業員を管理する",
+    "inviteButton": "従業員を招待",
+    "getFailed": "従業員一覧の取得に失敗しました:",
+    "tabs": {
+      "workers": "従業員",
+      "invitations": "招待"
+    },
+    "list": {
+      "title": "従業員一覧",
+      "empty": "従業員がいません。従業員を招待してください。",
+      "hourlyRate": "時給（USD）",
+      "registeredDate": "登録日",
+      "deactivate": "無効化"
+    },
+    "detail": {
+      "notFound": "従業員が見つかりません",
+      "backToList": "← 従業員一覧に戻る",
+      "statistics": "統計",
+      "totalApplications": "申請総数",
+      "approvedApplications": "承認済み申請",
+      "pendingApplications": "保留中の申請",
+      "paymentCount": "支払い回数",
+      "totalPayments": "総支払額",
+      "basicInfo": "基本情報",
+      "hourlyRate": "時給（USD）",
+      "registeredDate": "登録日",
+      "lastUpdated": "最終更新日",
+      "editSettings": "設定を編集"
+    },
+    "invite": {
+      "title": "従業員を招待",
+      "subtitle": "メールで新しい従業員を招待します。招待された従業員はリンクからアカウントを作成できます。",
+      "backToList": "← 従業員一覧に戻る"
+    },
+    "edit": {
+      "updateSuccess": "従業員情報を更新しました",
+      "updateFailed": "更新に失敗しました"
+    },
+    "deactivate": {
+      "title": "従業員を無効化",
+      "confirmMessage": "この従業員を無効化しますか？",
+      "warningMessage": "無効化すると、この従業員はログインや打刻ができなくなります。",
+      "button": "無効化",
+      "failed": "無効化に失敗しました"
+    }
+  },
+  "applications": {
+    "title": "申請管理",
+    "subtitle": "従業員からの時間申請を確認・承認する",
+    "getFailed": "申請一覧の取得に失敗しました:",
+    "list": {
+      "title": "申請一覧",
+      "selectedCount": "{count}件選択中",
+      "bulkApprove": "一括承認",
+      "bulkApproving": "一括承認中...",
+      "empty": "申請がありません",
+      "worker": "従業員",
+      "duration": "期間",
+      "approving": "承認中..."
+    },
+    "status": {
+      "all": "すべて",
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "却下",
+      "paymentRequested": "支払い申請済み",
+      "paid": "支払い済み"
+    },
+    "types": {
+      "single": "単発申請",
+      "batch": "まとめ申請",
+      "period": "期間一括申請"
+    },
+    "detail": {
+      "notFound": "申請が見つかりません",
+      "backToList": "← 申請一覧に戻る",
+      "title": "申請詳細",
+      "applicationInfo": "申請情報",
+      "applicationType": "申請タイプ",
+      "targetPeriod": "対象期間",
+      "workHours": "勤務時間",
+      "hourlyRate": "時給",
+      "salary": "給与",
+      "rejectionReason": "却下理由",
+      "applicationDate": "申請日",
+      "timestampDetails": "打刻詳細",
+      "approvalActions": "承認アクション",
+      "getDetailFailed": "申請詳細の取得に失敗しました"
+    },
+    "approval": {
+      "alreadyProcessed": "この申請は既に処理済みです",
+      "approve": "承認",
+      "approving": "承認中...",
+      "reject": "却下",
+      "rejectTitle": "申請を却下",
+      "rejectCategory": "却下カテゴリ",
+      "rejectReason": "却下理由",
+      "rejectReasonHint": "具体的な理由を入力してください（従業員が修正点を理解できるように）",
+      "rejectReasonMin": "（10文字以上）",
+      "minChars": "{count}文字以上",
+      "rejecting": "却下中...",
+      "categoryRequired": "却下カテゴリを選択してください",
+      "reasonRequired": "却下理由は10文字以上で入力してください",
+      "approveFailed": "承認に失敗しました",
+      "rejectFailed": "却下に失敗しました",
+      "bulkApproveFailed": "一括承認に失敗しました",
+      "selectToApprove": "承認する申請を選択してください",
+      "approvalsFailed": "{count}件の承認に失敗しました"
+    },
+    "rejectCategories": {
+      "timeError": "時間エラー",
+      "timeErrorDesc": "打刻時間が正しくありません",
+      "breakMissing": "休憩未入力",
+      "breakMissingDesc": "休憩時間が記録されていません",
+      "duplicate": "重複",
+      "duplicateDesc": "既に承認された期間と重複しています",
+      "violation": "規則違反",
+      "violationDesc": "勤務規則に違反しています",
+      "other": "その他",
+      "otherDesc": "その他の理由"
+    }
+  },
+  "timestamps": {
+    "work": "出勤",
+    "rest": "休憩",
+    "end": "退勤",
+    "workStart": "勤務開始",
+    "workEnd": "勤務終了",
+    "restStart": "休憩開始",
+    "workDesc": "出勤（開始）",
+    "restDesc": "休憩（開始）",
+    "endDesc": "退勤（終了）",
+    "clockedWork": "出勤を打刻しました",
+    "clockedEnd": "退勤を打刻しました",
+    "clockedRest": "休憩を打刻しました",
+    "clockFailed": "打刻に失敗しました",
+    "timestampStatus": "打刻ステータス",
+    "applicationStatus": "申請ステータス",
+    "noTimestamps": "まだ打刻がありません",
+    "edit": {
+      "title": "打刻を編集",
+      "dateLabel": "日付",
+      "timeLabel": "時刻",
+      "statusLabel": "ステータス",
+      "memoLabel": "メモ",
+      "memoPlaceholder": "メモを入力...",
+      "memoHint": "任意でメモを入力できます",
+      "updateSuccess": "打刻を更新しました",
+      "updateFailed": "更新に失敗しました",
+      "consecutiveEndWarning": "この変更により連続した退勤になります。退勤の前には出勤または休憩が必要です。"
+    },
+    "delete": {
+      "title": "打刻を削除",
+      "confirmMessage": "本当に削除しますか？",
+      "timeLabel": "時刻:",
+      "statusLabel": "ステータス:",
+      "consecutiveEndWarning": "この打刻を削除すると連続した退勤になります。削除できません。",
+      "irreversibleWarning": "この操作は取り消せません。削除は編集履歴に記録されます。",
+      "deleteSuccess": "打刻を削除しました",
+      "deleteFailed": "削除に失敗しました"
+    },
+    "createFailed": "打刻の作成に失敗しました",
+    "getFailed": "打刻の取得に失敗しました",
+    "summaryFailed": "サマリーの取得に失敗しました",
+    "editHistoryFailed": "編集履歴の取得に失敗しました"
+  },
+  "timesheet": {
+    "title": "タイムシート",
+    "subtitle": "過去の打刻を確認・編集する",
+    "periodSelect": "期間選択",
+    "timestampList": "打刻一覧",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "noHistory": "打刻履歴がありません"
+  },
+  "todaySummary": {
+    "title": "今日のサマリー",
+    "status": {
+      "notStarted": "未開始",
+      "working": "勤務中",
+      "resting": "休憩中",
+      "ended": "終了"
+    },
+    "pendingWarning": {
+      "title": "前回の勤務が終了していません",
+      "message": "{date}の{status}が終了していません。打刻忘れの場合は編集してください。",
+      "dismiss": "この警告を閉じる"
+    },
+    "workTime": "勤務時間",
+    "restTime": "休憩時間",
+    "actualTime": "実働時間"
+  },
+  "workTimer": {
+    "currentStatus": "現在のステータス",
+    "idle": "待機中",
+    "elapsedTime": "経過時間"
+  },
+  "dateNavigator": {
+    "previousDay": "前日",
+    "nextDay": "翌日"
+  },
+  "monthNavigator": {
+    "previousMonth": "前月",
+    "nextMonth": "翌月"
+  },
+  "editHistory": {
+    "title": "編集履歴",
+    "titleWithDate": "{date}の編集履歴",
+    "empty": "編集履歴がありません",
+    "changeDate": "変更日時",
+    "targetTimestamp": "対象打刻",
+    "operation": "操作",
+    "before": "変更前",
+    "after": "変更後",
+    "timestampTime": "打刻時刻",
+    "delete": "削除",
+    "newTimestamp": "新規打刻",
+    "change": "変更"
+  },
+  "sessions": {
+    "title": "勤務セッション",
+    "totalCount": "合計: {count}件",
+    "totalWork": "合計勤務: {hours}時間{minutes}分",
+    "notApplied": "未申請: {count}",
+    "applying": "申請中: {count}",
+    "approved": "承認済み: {count}",
+    "rejected": "却下: {count}",
+    "table": {
+      "date": "日付",
+      "start": "開始",
+      "end": "終了",
+      "workTime": "勤務時間",
+      "restTime": "休憩時間",
+      "status": "ステータス"
+    },
+    "status": {
+      "notApplied": "未申請",
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "却下",
+      "paymentRequested": "支払い申請済み",
+      "paid": "支払い済み",
+      "incomplete": "未完了"
+    },
+    "rejectReasons": {
+      "timeError": "時間エラー",
+      "breakMissing": "休憩未入力",
+      "duplicate": "重複",
+      "violation": "規則違反"
+    },
+    "noData": "今月のデータがありません",
+    "apply": "申請",
+    "reapply": "再申請",
+    "cancelApplication": "申請取消",
+    "cancelConfirm": "この申請を取り消しますか？",
+    "rejectionReason": "却下理由: {reason}",
+    "memoPlaceholder": "メモを入力...",
+    "applicationCreated": "申請を作成しました",
+    "applicationFailed": "申請の作成に失敗しました",
+    "applicationCancelled": "申請を取り消しました",
+    "cancelFailed": "申請の取り消しに失敗しました",
+    "getFailed": "月間セッションの取得に失敗しました"
+  },
+  "applicationList": {
+    "title": "申請一覧",
+    "subtitle": "月別の勤務セッションと申請ステータスを確認する"
+  },
+  "timestampList": {
+    "notEnded": "未終了",
+    "approvalPending": "承認待ち",
+    "approved": "承認済み",
+    "paymentPending": "支払い待ち",
+    "paid": "支払い済み"
+  },
+  "wallet": {
+    "title": "ウォレット設定",
+    "subtitle": "給与受取用のXRPアドレスを管理する",
+    "backToList": "一覧に戻る",
+    "addAddress": "アドレスを追加",
+    "getFailed": "アドレスの取得に失敗しました",
+    "setDefaultSuccess": "デフォルトアドレスを設定しました",
+    "setDefaultFailed": "設定に失敗しました",
+    "deleteSuccess": "アドレスを削除しました",
+    "deleteFailed": "削除に失敗しました",
+    "addNew": "新しいアドレスを追加",
+    "registeredAddresses": "登録済みアドレス",
+    "noAddresses": "給与を受け取るためにXRPアドレスを登録してください",
+    "addFirst": "最初のアドレスを追加",
+    "form": {
+      "cryptoType": "暗号資産タイプ",
+      "address": "アドレス",
+      "addressPlaceholder": "rで始まる...",
+      "addressHint": "XRPアドレスは「r」で始まります",
+      "label": "ラベル（任意）",
+      "labelPlaceholder": "例: メインウォレット",
+      "setAsDefault": "デフォルトアドレスに設定",
+      "addSuccess": "アドレスを追加しました",
+      "addFailed": "アドレスの追加に失敗しました",
+      "rlusdLabel": "RLUSD (USDステーブルコイン)",
+      "rlusdTrustlineNote": "RLUSDを受け取るには、お使いのウォレットでRLUSDへのトラストラインを事前に設定する必要があります。トラストラインが未設定の場合、送金は失敗します。"
+    },
+    "list": {
+      "label": "ラベル",
+      "crypto": "暗号資産",
+      "address": "アドレス",
+      "status": "ステータス",
+      "operations": "操作",
+      "cannotDeleteDefault": "デフォルトアドレスは削除できません",
+      "deleteConfirm": "本当に削除しますか？",
+      "empty": "登録済みアドレスがありません",
+      "setDefault": "デフォルトに設定"
+    },
+    "createFailed": "アドレスの作成に失敗しました",
+    "updateFailed": "アドレスの更新に失敗しました",
+    "gemwallet": {
+      "subtitle": "GemWalletに接続してアドレスをインポートし、残高を確認できます",
+      "importTitle": "GemWalletからアドレスをインポート",
+      "importAsXrp": "XRPアドレスとしてインポート",
+      "importAsRlusd": "RLUSDアドレスとしてインポート",
+      "alreadyRegistered": "{cryptoType}は登録済み",
+      "importSuccess": "{cryptoType}アドレスをインポートしました",
+      "importFailed": "アドレスのインポートに失敗しました",
+      "importNote": "このアドレスをインポートして給与を受け取れます"
+    }
+  },
+  "gemwallet": {
+    "connect": "GemWalletに接続",
+    "connecting": "接続中...",
+    "disconnect": "切断",
+    "connectedAs": "接続中",
+    "connectionFailed": "GemWalletへの接続に失敗しました",
+    "notInstalled": "GemWallet拡張機能がインストールされていません。先にインストールしてください。",
+    "connectToExecute": "支払いを実行するにはGemWalletに接続してください",
+    "executePayment": "GemWalletで支払いを実行",
+    "paymentDescription": "組織のGemWalletに接続して、支払いに署名・実行します",
+    "addressMismatch": "接続されたウォレットアドレスが組織ウォレットと一致しません",
+    "expectedAddress": "期待するアドレス",
+    "confirmTitle": "支払いの確認",
+    "confirm": "確認して支払う",
+    "executing": "実行中...",
+    "stepConnecting": "GemWalletに接続中...",
+    "stepSigning": "GemWalletでトランザクションに署名してください...",
+    "stepConfirming": "トランザクションを確認中...",
+    "paymentFailed": "支払いに失敗しました"
+  },
+  "payments": {
+    "title": "支払い管理",
+    "subtitle": "従業員への支払いリクエストを管理する",
+    "walletBalanceSection": "ウォレット残高セクション",
+    "paymentRequests": "支払いリクエスト",
+    "tabs": {
+      "all": "すべて",
+      "pending": "保留中",
+      "completed": "完了",
+      "failed": "失敗"
+    },
+    "status": {
+      "pending": "保留中",
+      "processing": "処理中",
+      "completed": "完了",
+      "failed": "失敗"
+    },
+    "list": {
+      "title": "支払いリクエスト一覧",
+      "empty": "支払いリクエストがありません",
+      "worker": "従業員",
+      "amountUsd": "金額（USD）",
+      "crypto": "暗号資産",
+      "requestDate": "リクエスト日"
+    },
+    "detail": {
+      "notFound": "支払いリクエストが見つかりません",
+      "backToList": "← 支払い一覧に戻る",
+      "title": "支払い詳細",
+      "paymentInfo": "支払い情報",
+      "destinationAddress": "送金先アドレス",
+      "amountUsd": "金額（USD）",
+      "cryptoRate": "暗号資産レート",
+      "transferAmount": "送金額",
+      "transactionHash": "トランザクションハッシュ",
+      "processedAt": "処理日時",
+      "requestedAt": "リクエスト日時",
+      "relatedApplications": "関連申請",
+      "paymentActions": "支払いアクション"
+    },
+    "execute": {
+      "processing": "XRP送金を処理中...",
+      "alreadyProcessed": "この支払いは既に処理済みです",
+      "button": "支払いを実行",
+      "description": "XRP Ledger経由で従業員のウォレットに送金されます",
+      "confirmTitle": "支払いを実行しますか？",
+      "confirmMessage": "この操作は取り消せません。従業員の暗号資産アドレスに支払いが送信されます。",
+      "failed": "支払いの実行に失敗しました"
+    },
+    "getFailed": "支払いリクエスト一覧の取得に失敗しました:",
+    "getDetailFailed": "支払いリクエスト詳細の取得に失敗しました"
+  },
+  "paymentReceive": {
+    "title": "給与受領",
+    "subtitle": "承認済みの申請を選択して暗号資産で給与を受け取る",
+    "availableApplications": "受取可能な申請",
+    "receiveComplete": "給与を正常に受け取りました",
+    "pendingApproval": {
+      "title": "支払いリクエストを送信しました",
+      "message": "支払いリクエストが送信されました。管理者がGemWalletで支払いを処理します。承認後に給与が送金されます。"
+    },
+    "cryptoSelect": {
+      "title": "受取通貨を選択",
+      "xrpDesc": "変動レート",
+      "rlusdDesc": "USDと1:1",
+      "rlusdNote": "RLUSDを受け取るには、お使いのウォレットでトラストラインを設定する必要があります。トラストラインが未設定の場合、送金は失敗します。"
+    },
+    "completeDetails": {
+      "amount": "金額",
+      "destination": "送金先",
+      "transaction": "トランザクション"
+    },
+    "selector": {
+      "selectedCount": "{count}件選択中",
+      "selectApplications": "申請を選択",
+      "selectAll": "すべて選択",
+      "deselectAll": "すべて解除",
+      "select": "選択",
+      "date": "日付",
+      "workTime": "勤務時間",
+      "amount": "金額",
+      "status": "ステータス",
+      "noApplications": "受取可能な承認済み申請がありません"
+    },
+    "summary": {
+      "title": "受取サマリー + ボタン",
+      "receiveCrypto": "暗号資産を受け取る",
+      "selectedApplications": "選択した申請",
+      "totalAmount": "合計金額",
+      "rate": "レート",
+      "fetching": "取得中...",
+      "fetchFailed": "取得失敗",
+      "receiveAmount": "受取金額",
+      "notice": "選択した通貨のデフォルトアドレスに送金されます。ウォレット設定で確認してください。トランザクション手数料は会社負担です。",
+      "receiving": "支払い処理中...",
+      "receiveButton": "XRPを受け取る",
+      "receiveButtonWithCrypto": "{crypto}を受け取る",
+      "selectApplications": "受け取る申請を選択してください"
+    },
+    "history": {
+      "title": "受取履歴",
+      "receiveDate": "受取日",
+      "amountUsd": "金額（USD）",
+      "crypto": "暗号資産",
+      "rate": "レート",
+      "status": "ステータス",
+      "transaction": "トランザクション",
+      "empty": "受取履歴がありません",
+      "cancelled": "キャンセル"
+    },
+    "receiveFailed": "XRPの受取に失敗しました",
+    "getRateFailed": "為替レートの取得に失敗しました",
+    "selectAtLeastOne": "少なくとも1つの申請を選択してください",
+    "getApprovedFailed": "承認済み申請の取得に失敗しました",
+    "createRequestFailed": "支払いリクエストの作成に失敗しました",
+    "getRequestsFailed": "支払いリクエストの取得に失敗しました"
+  },
+  "availableBalance": {
+    "title": "利用可能残高",
+    "usdEquivalent": "USD換算",
+    "cryptoEquivalent": "暗号資産換算",
+    "rate": "レート: 1 {crypto} = {rate}"
+  },
+  "walletBalance": {
+    "title": "ウォレット残高",
+    "fetching": "取得中...",
+    "refresh": "更新",
+    "fetchingBalance": "ウォレット残高を取得中...",
+    "getFailed": "ウォレット残高の取得に失敗しました",
+    "noWallets": "ウォレットが登録されていません。暗号資産設定からウォレットを追加してください。",
+    "perWallet": "ウォレット別残高",
+    "network": "ネットワーク",
+    "label": "ラベル",
+    "address": "アドレス",
+    "xrpBalance": "XRP残高",
+    "usdBalance": "USD残高",
+    "status": "ステータス",
+    "testnet": "テストネット",
+    "summary": {
+      "totalXrp": "XRP合計残高",
+      "totalUsd": "USD換算合計",
+      "rate": "XRP / USD レート",
+      "rateUpdated": "更新: {time}",
+      "rateFailed": "レートの取得に失敗しました"
+    }
+  },
+  "hashSearch": {
+    "title": "ハッシュ検索",
+    "subtitle": "XRPLトランザクションのMemoDataハッシュで支払いデータを検索",
+    "searchButton": "検索",
+    "searchFailed": "検索に失敗しました",
+    "searchError": "検索中にエラーが発生しました",
+    "form": {
+      "label": "MemoDataハッシュ値",
+      "placeholder": "SHA-256ハッシュまたはMemoData 16進文字列",
+      "hint": "SHA-256ハッシュ（64文字）またはXRPLトランザクションのMemoData（16進エンコード文字列）で検索",
+      "searching": "検索中..."
+    },
+    "result": {
+      "title": "支払いデータ",
+      "recordedAt": "記録日時: {date}",
+      "dataHash": "データハッシュ",
+      "transactionHash": "トランザクションハッシュ",
+      "paymentRequestId": "支払いリクエストID",
+      "payerName": "支払者名",
+      "worker": "従業員",
+      "usdAmount": "USD金額",
+      "xrpAmount": "XRP金額",
+      "xrpRate": "XRPレート",
+      "destinationAddress": "送金先アドレス",
+      "timestamp": "タイムスタンプ",
+      "applicationId": "申請ID",
+      "applicantName": "申請者名",
+      "verificationResult": "検証結果",
+      "verified": "検証済み",
+      "verificationFailed": "検証失敗",
+      "resultsCount": "{count}件の結果が見つかりました",
+      "noResults": "一致するデータが見つかりません"
+    },
+    "validation": {
+      "hashRequired": "ハッシュ値を入力してください",
+      "hexRequired": "16進文字列を入力してください",
+      "formatHint": "SHA-256ハッシュ（64文字）またはMemoData 16進文字列を入力してください"
+    }
+  },
+  "organizationSettings": {
+    "title": "組織設定",
+    "subtitle": "組織の基本情報を管理する",
+    "getFailed": "組織情報の取得に失敗しました:",
+    "basicInfo": "基本情報",
+    "organizationName": "組織名",
+    "organizationNamePlaceholder": "組織名を入力",
+    "organizationId": "組織ID",
+    "organizationIdReadonly": "組織IDは変更できません",
+    "updateSuccess": "組織情報を更新しました",
+    "updateFailed": "更新に失敗しました",
+    "orgInfo": {
+      "title": "組織情報",
+      "adminCount": "管理者数",
+      "workerCount": "従業員数",
+      "createdAt": "作成日",
+      "updatedAt": "最終更新日"
+    },
+    "validation": {
+      "nameRequired": "組織名は必須です",
+      "nameMaxLength": "組織名は100文字以内で入力してください"
+    }
+  },
+  "cryptoSettings": {
+    "title": "暗号資産設定",
+    "subtitle": "XRPウォレットと支払い設定を管理する",
+    "walletManagement": "ウォレット管理",
+    "paymentSecuritySettings": "支払い・セキュリティ設定",
+    "getFailed": "暗号資産設定の取得に失敗しました:",
+    "updateSuccess": "設定を保存しました",
+    "updateFailed": "更新に失敗しました",
+    "wallets": {
+      "title": "ウォレット管理",
+      "addWallet": "ウォレットを追加",
+      "loading": "読み込み中...",
+      "getFailed": "ウォレットの取得に失敗しました",
+      "updateFailed": "更新に失敗しました",
+      "deleteFailed": "削除に失敗しました"
+    },
+    "addWallet": {
+      "cryptoType": "暗号資産タイプ",
+      "walletAddress": "ウォレットアドレス",
+      "addressPlaceholder": "rXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "addressHint": "XRPアドレスは「r」で始まります",
+      "walletSecret": "ウォレットシークレット",
+      "secretPlaceholder": "sXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "secretHint": "シークレットはAES-256で暗号化されて保存されます",
+      "label": "ラベル（任意）",
+      "labelPlaceholder": "例: メインウォレット、給与用ウォレット",
+      "setAsDefault": "デフォルトウォレットに設定",
+      "addSuccess": "ウォレットを追加しました",
+      "addFailed": "ウォレットの追加に失敗しました"
+    },
+    "walletList": {
+      "label": "ラベル",
+      "crypto": "暗号資産",
+      "address": "アドレス",
+      "balance": "残高",
+      "status": "ステータス",
+      "operations": "操作",
+      "cannotDeleteDefault": "デフォルトウォレットは削除できません",
+      "deleteConfirm": "本当に削除しますか？",
+      "empty": "登録済みウォレットがありません",
+      "setDefault": "デフォルトに設定"
+    },
+    "form": {
+      "autoPayment": "自動支払い設定",
+      "enableAutoPayment": "自動支払いを有効にする",
+      "maxAutoPaymentAmount": "自動支払い上限額（USD）",
+      "maxAutoPaymentHint": "この金額以下の支払いは自動で処理されます",
+      "dailyPaymentLimit": "1日の支払い上限（件数）",
+      "securitySettings": "セキュリティ設定",
+      "dailyWithdrawLimit": "1日の出金上限（USD）",
+      "dailyWithdrawHint": "空欄で無制限",
+      "newAddressLockTime": "新規アドレス登録後のロック時間（時間）",
+      "newAddressLockHint": "新しいアドレス登録後に支払いをロックする時間",
+      "require2fa": "二要素認証を必須にする",
+      "saveButton": "設定を保存"
+    },
+    "validation": {
+      "addressRequired": "ウォレットアドレスは必須です",
+      "secretRequired": "ウォレットシークレットは必須です",
+      "positiveValue": "0以上の値を入力してください",
+      "positiveInteger": "1以上の整数を入力してください",
+      "nonNegativeInteger": "0以上の整数を入力してください"
+    },
+    "tokenIssuer": {
+      "title": "トークン発行者設定",
+      "subtitle": "RLUSDなどのトークンの発行者アドレスを管理します",
+      "addConfig": "設定を追加",
+      "issuerAddress": "発行者アドレス",
+      "issuerAddressHint": "RLUSDトークンの発行者XRPLアドレス",
+      "currencyCode": "通貨コード",
+      "network": "ネットワーク",
+      "sourceEnv": "環境変数",
+      "sourceDb": "データベース",
+      "envNote": "この設定は環境変数から読み込まれています。変更するには環境変数を更新してください。",
+      "noConfig": "トークン発行者設定がありません",
+      "noConfigHint": "RLUSDを使用するには、発行者アドレスを設定してください",
+      "createSuccess": "トークン発行者設定を追加しました",
+      "createFailed": "トークン発行者設定の追加に失敗しました",
+      "updateFailed": "トークン発行者設定の更新に失敗しました",
+      "deleteConfirm": "本当に削除しますか？",
+      "deleteSuccess": "トークン発行者設定を削除しました",
+      "deleteFailed": "トークン発行者設定の削除に失敗しました",
+      "getFailed": "トークン発行者設定の取得に失敗しました"
+    },
+    "gemwalletImport": {
+      "title": "組織ウォレットとしてインポート",
+      "description": "このGemWalletアドレスを組織の支払い用ウォレットとしてインポートします。支払いはGemWalletでの手動承認が必要になります。",
+      "importAsXrp": "XRPウォレットとしてインポート",
+      "importAsRlusd": "RLUSDウォレットとしてインポート",
+      "alreadyRegistered": "{cryptoType}は登録済み",
+      "importSuccess": "{cryptoType}ウォレットをインポートしました",
+      "importFailed": "ウォレットのインポートに失敗しました"
+    }
+  },
+  "walletConnection": {
+    "title": "ウォレットに接続",
+    "subtitle": "XRP Ledgerにアクセスするウォレットを選択してください",
+    "sectionTitle": "ブラウザウォレット接続",
+    "sectionSubtitle": "ブラウザ拡張機能のウォレットに接続してRLUSD残高を確認できます",
+    "connectButton": "ウォレットに接続",
+    "connected": "接続済み",
+    "disconnect": "切断",
+    "connecting": "接続中...",
+    "metamaskNotSupported": "EVMウォレット（非対応）",
+    "comingSoon": "近日対応",
+    "gemwalletDescription": "XRP Ledger用ブラウザ拡張ウォレット",
+    "gemwalletNotInstalled": "GemWalletがインストールされていません。",
+    "installGemwallet": "インストールはこちら",
+    "cancel": "キャンセル",
+    "balance": "残高",
+    "fetchingBalance": "残高を取得中...",
+    "balanceFetchFailed": "残高の取得に失敗しました",
+    "refreshBalance": "残高を更新"
+  },
+  "companyInfo": {
+    "title": "会社情報",
+    "subtitle": "所属する組織の情報を確認する",
+    "orgInfo": "組織情報",
+    "notFound": "組織情報が見つかりません",
+    "getFailed": "組織情報の取得に失敗しました",
+    "companyName": "会社名",
+    "foundedDate": "設立日",
+    "employeeCount": "従業員数"
+  },
+  "landingPage": {
+    "hero": {
+      "badge": "XRP Ledger 対応",
+      "title1": "給与管理を、",
+      "title2": "次のレベルへ。",
+      "subtitle": "打刻、申請、承認、支払い。すべてを1つのプラットフォームで。XRPによる即時送金で従来の給与管理を変革します。",
+      "ctaStart": "無料で始める",
+      "ctaWorkerLogin": "従業員ログイン",
+      "noCreditCard": "クレジットカード不要",
+      "instantSetup": "即時セットアップ"
+    },
+    "features": {
+      "poweredBy": "Powered by",
+      "xrpLedger": "XRP Ledger",
+      "encryption": "AES-256 暗号化",
+      "realTimeRate": "リアルタイム為替レート"
+    },
+    "howItWorks": {
+      "title": "仕組み",
+      "subtitle": "シンプルな4ステップ",
+      "step1": {
+        "title": "打刻",
+        "description": "Work / Rest / End の3ボタンで勤務時間を記録。"
+      },
+      "step2": {
+        "title": "申請",
+        "description": "まとめて申請や期間一括申請など、柔軟なスタイルで給与申請。"
+      },
+      "step3": {
+        "title": "承認",
+        "description": "管理者がワンクリックで申請を確認・承認。"
+      },
+      "step4": {
+        "title": "受取",
+        "description": "好きなタイミングでXRPとして即時に給与を受取。"
+      }
+    },
+    "featuresSection": {
+      "title": "機能",
+      "subtitle": "必要なものすべて",
+      "description": "勤怠管理から暗号資産支払いまで、給与業務をエンドツーエンドでサポート。",
+      "realTimeClock": {
+        "title": "リアルタイム打刻",
+        "description": "Work、Rest、Endの3ボタンでシンプル操作。リアルタイムタイマーで勤務時間を即時確認。"
+      },
+      "flexibleApplication": {
+        "title": "柔軟な申請フロー",
+        "description": "単発、まとめ、期間一括の申請に対応。提出前に自動計算された給与をプレビュー。"
+      },
+      "instantXrpTransfer": {
+        "title": "XRP即時送金",
+        "description": "リアルタイム為替レートでXRPに変換。従来の銀行振込では不可能な速度で給与を受取。"
+      },
+      "onChainRecord": {
+        "title": "オンチェーン記録",
+        "description": "すべてのトランザクションはXRP Ledgerに記録。改ざん不可能で透明性の高い給与履歴。"
+      },
+      "globalTransfer": {
+        "title": "グローバル送金",
+        "description": "国境を越えた給与支払いをサポート。為替手数料を大幅削減した高速な海外送金。"
+      },
+      "dashboardManagement": {
+        "title": "ダッシュボード管理",
+        "description": "従業員招待、打刻確認、申請承認、支払い管理を1つの画面で一元管理。"
+      }
+    },
+    "stats": {
+      "clockTime": "打刻にかかる時間",
+      "clockTimeValue": "3秒",
+      "paymentAvailability": "支払い可能",
+      "paymentAvailabilityValue": "24時間365日",
+      "xrpSpeed": "XRP送金速度",
+      "xrpSpeedValue": "3-5秒",
+      "setupCost": "初期導入コスト",
+      "setupCostValue": "¥0"
+    },
+    "forAdmins": {
+      "title": "管理者向け",
+      "subtitle": "管理者のための強力なツール",
+      "description": "従業員招待から勤怠管理、申請承認、支払い実行まで。すべてのワークフローを1つのダッシュボードで管理。",
+      "feature1": "メールで従業員を招待・管理",
+      "feature2": "申請の一括承認・却下",
+      "feature3": "組織のXRPウォレット設定",
+      "feature4": "リアルタイムの勤怠ログ確認",
+      "cta": "管理者として登録"
+    },
+    "forWorkers": {
+      "title": "従業員向け",
+      "subtitle": "従業員にストレスフリー",
+      "description": "複雑な操作は不要。直感的なUIで打刻し、好きなときにXRPで給与を受取。",
+      "feature1": "ワンタップで打刻開始・終了",
+      "feature2": "リアルタイムで申請状況を確認",
+      "feature3": "いつでも給与を受取",
+      "feature4": "画面から簡単にウォレット設定",
+      "cta": "従業員としてログイン"
+    },
+    "cta": {
+      "title1": "給与の未来は、",
+      "title2": "今日から始まる。",
+      "description": "無料アカウントを作成して、XRPによるシームレスな給与管理を体験しよう。",
+      "ctaStart": "無料で始める",
+      "ctaWorkerLogin": "従業員ログイン"
+    },
+    "footer": {
+      "product": "製品",
+      "adminLogin": "管理者ログイン",
+      "workerLogin": "従業員ログイン",
+      "register": "登録",
+      "support": "サポート",
+      "contact": "お問い合わせ",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "copyright": "Senecal rights reserved.",
+      "poweredBy": "Powered by XRP Ledger"
+    },
+    "preview": {
+      "workTime": "勤務時間",
+      "thisMonthApplications": "今月の申請",
+      "xrpBalance": "XRP残高",
+      "monthlyWorkHours": "月間勤務時間",
+      "working": "勤務中",
+      "applying": "申請中",
+      "approved": "承認済み",
+      "adminDashboard": "管理者ダッシュボード",
+      "applicationList": "申請一覧",
+      "workerManagement": "従業員管理",
+      "payments": "支払い",
+      "workerDashboard": "従業員ダッシュボード",
+      "work": "出勤",
+      "rest": "休憩",
+      "end": "退勤",
+      "recentApplications": "最近の申請",
+      "paid": "支払い済み",
+      "approve": "承認"
+    }
+  }
+}

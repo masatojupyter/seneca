@@ -1,0 +1,1060 @@
+{
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "japanese": "日本語",
+    "switchTo": "Switch language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "update": "Update",
+    "search": "Search",
+    "details": "Details",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "execute": "Execute",
+    "executing": "Executing...",
+    "comingSoon": "Coming Soon",
+    "unexpectedError": "An unexpected error occurred",
+    "actions": "Actions",
+    "status": "Status",
+    "date": "Date",
+    "time": "Time",
+    "memo": "Memo",
+    "amount": "Amount",
+    "name": "Name",
+    "email": "Email Address",
+    "password": "Password",
+    "today": "Today",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "year": "Year",
+    "month": "Month",
+    "hours": "hours",
+    "minutes": "minutes",
+    "items": "items",
+    "people": "people",
+    "active": "Active",
+    "inactive": "Inactive",
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "default": "Default",
+    "optional": "Optional",
+    "required": "Required",
+    "selectPlease": "Please select",
+    "noData": "No data",
+    "notSet": "Not set",
+    "hide": "Hide",
+    "show": "Show",
+    "deleted": "Deleted",
+    "xrp": "XRP",
+    "rlusd": "RLUSD",
+    "usd": "USD",
+    "admin": "Admin",
+    "worker": "Employee",
+    "employee": "Employee"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "adminTitle": "Admin Login",
+      "workerTitle": "Employee Login",
+      "loginAsAdmin": "Login as Admin",
+      "loginAsWorker": "Login as Employee",
+      "emailPlaceholder": "Enter email address",
+      "passwordPlaceholder": "Enter password",
+      "organizationId": "Organization ID (Optional)",
+      "organizationIdHint": "Enter only if you belong to multiple organizations",
+      "organizationIdNote": "If omitted, you will log in with the first matching organization",
+      "loginFailed": "Login failed",
+      "invalidCredentials": "Email or password is incorrect",
+      "tryAgain": "Login failed. Please try again."
+    },
+    "logout": {
+      "button": "Logout",
+      "failed": "Logout failed"
+    },
+    "validation": {
+      "invalidEmail": "Please enter a valid email address",
+      "passwordMin": "Password must be 8 characters or more"
+    }
+  },
+  "registration": {
+    "title": "Admin Registration",
+    "subtitle": "Create a new organization to get started",
+    "organizationName": "Organization Name",
+    "organizationNamePlaceholder": "Example Corp.",
+    "yourName": "Your Name",
+    "yourNamePlaceholder": "John Doe",
+    "passwordConfirm": "Password (Confirm)",
+    "passwordHint": "Enter 8 characters or more",
+    "registerButton": "Register",
+    "registrationComplete": "Registration complete. A confirmation email has been sent.",
+    "redirectingToLogin": "Redirecting to login page in 3 seconds...",
+    "registrationFailed": "Registration failed",
+    "tryAgain": "Registration failed. Please try again.",
+    "passwordMismatch": "Passwords do not match",
+    "alreadyHaveAccount": "Already have an account? Login here",
+    "nameRequired": "Please enter a name",
+    "organizationRequired": "Please enter organization name"
+  },
+  "verifyEmail": {
+    "title": "Email Verification",
+    "invalidLink": "Invalid verification link. Please click the link in your email again.",
+    "verificationComplete": "Email verification complete",
+    "accountActivated": "Your account has been activated. You can now login to access the dashboard.",
+    "redirectingIn": "Redirecting to login page in {seconds} seconds...",
+    "loginNow": "Login now",
+    "verificationFailed": "Verification failed",
+    "goToRegistration": "Go to registration page",
+    "tokenNotSpecified": "Verification token not specified",
+    "tryAgain": "Email verification failed. Please try again."
+  },
+  "invitation": {
+    "title": "Employee Invitation",
+    "subtitle": "Create an account to get started",
+    "sendInvitation": "Send Invitation",
+    "hourlyRate": "Hourly Rate (USD)",
+    "invitationSent": "Invitation sent.",
+    "invitationToken": "Invitation Token: {token}",
+    "devNote": "(This is displayed in dev environment, normally sent by email)",
+    "sendFailed": "Failed to send invitation",
+    "acceptInvitation": "Accept Invitation",
+    "createAccount": "Create Account",
+    "accountCreated": "Account created successfully.",
+    "acceptFailed": "Failed to accept invitation",
+    "list": {
+      "title": "Invitation List",
+      "empty": "No invitations.",
+      "invitedDate": "Invited Date",
+      "expiresAt": "Expires At",
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "expired": "Expired",
+      "resend": "Resend",
+      "resending": "Resending...",
+      "cancelInvitation": "Cancel Invitation",
+      "cancelConfirm": "Cancel this invitation? Cancelled invitations cannot be restored.",
+      "getFailed": "Failed to get invitation list",
+      "cancelFailed": "Failed to cancel invitation",
+      "resendFailed": "Failed to resend invitation"
+    },
+    "validation": {
+      "tokenRequired": "Token is required",
+      "hourlyRatePositive": "Please enter a value greater than 0 for hourly rate"
+    }
+  },
+  "admin": {
+    "sidebar": {
+      "main": "Main",
+      "dashboard": "Dashboard",
+      "management": "Management",
+      "workerManagement": "Employee Management",
+      "applicationManagement": "Application Management",
+      "paymentManagement": "Payment Management",
+      "hashSearch": "Hash Search",
+      "settings": "Settings",
+      "organizationSettings": "Organization Settings",
+      "cryptoSettings": "Crypto Settings"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Organization overview and recent activity",
+      "statsError": "Failed to get statistics:",
+      "activityError": "Failed to get activity history:"
+    },
+    "stats": {
+      "totalWorkers": "Total Employees",
+      "activeWorkers": "Active: {count}",
+      "pendingApplications": "Pending Applications",
+      "applicationsThisMonth": "This month: {count}",
+      "pendingPayments": "Pending Payments",
+      "paymentsThisMonth": "This month: {count}",
+      "totalPaymentsThisMonth": "Total Payments This Month"
+    },
+    "recentActivities": {
+      "title": "Recent Activities",
+      "empty": "No activity history",
+      "application": "Application",
+      "payment": "Payment"
+    },
+    "login": {
+      "title": "Admin Login",
+      "subtitle": "Seneca Admin Panel",
+      "registerLink": "Register a new organization"
+    }
+  },
+  "worker": {
+    "sidebar": {
+      "main": "Main",
+      "dashboard": "Dashboard",
+      "applicationList": "Application List",
+      "attendancePayment": "Attendance & Payment",
+      "timesheet": "Timesheet",
+      "paymentReceive": "Payment Receive",
+      "hashSearch": "Hash Search",
+      "settings": "Settings",
+      "wallet": "Wallet",
+      "profile": "Profile",
+      "companyInfo": "Company Info"
+    },
+    "login": {
+      "title": "Employee Login",
+      "subtitle": "Senecaendance System",
+      "createAccountHint": "Create an account from your invitation email"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Clock your work time",
+      "timestamp": "Timestamp",
+      "timestampHistory": "Timestamp History"
+    },
+    "profile": {
+      "title": "Edit Profile",
+      "subtitle": "Edit your profile information",
+      "basicInfo": "Basic Information",
+      "profileNotFound": "Profile not found",
+      "getFailed": "Failed to get profile",
+      "updateSuccess": "Profile updated",
+      "updateFailed": "Failed to update",
+      "emailReadonly": "Email address cannot be changed",
+      "hourlyRateReadonly": "Hourly rate can only be changed by admin"
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage various settings",
+      "walletSection": "Payment Address",
+      "walletDescription": "Set your XRP receiving address",
+      "profileSection": "Edit Profile",
+      "profileDescription": "Edit your name and profile information",
+      "companySection": "Company Info",
+      "companyDescription": "View your organization information"
+    }
+  },
+  "workers": {
+    "title": "Employee Management",
+    "subtitle": "Manage your organization's employees",
+    "inviteButton": "Invite Employee",
+    "getFailed": "Failed to get employee list:",
+    "tabs": {
+      "workers": "Employees",
+      "invitations": "Invitations"
+    },
+    "list": {
+      "title": "Employee List",
+      "empty": "No employees. Please invite employees.",
+      "hourlyRate": "Hourly Rate (USD)",
+      "registeredDate": "Registered Date",
+      "deactivate": "Deactivate"
+    },
+    "detail": {
+      "notFound": "Employee not found",
+      "backToList": "← Back to Employee List",
+      "statistics": "Statistics",
+      "totalApplications": "Total Applications",
+      "approvedApplications": "Approved Applications",
+      "pendingApplications": "Pending Applications",
+      "paymentCount": "Payment Count",
+      "totalPayments": "Total Payments",
+      "basicInfo": "Basic Information",
+      "hourlyRate": "Hourly Rate (USD)",
+      "registeredDate": "Registered Date",
+      "lastUpdated": "Last Updated",
+      "editSettings": "Edit Settings"
+    },
+    "invite": {
+      "title": "Invite Employee",
+      "subtitle": "Invite new employees by email. Invited employees can create an account from the link.",
+      "backToList": "← Back to Employee List"
+    },
+    "edit": {
+      "updateSuccess": "Employee information updated",
+      "updateFailed": "Failed to update"
+    },
+    "deactivate": {
+      "title": "Deactivate Employee",
+      "confirmMessage": "Deactivate this employee?",
+      "warningMessage": "Once deactivated, this employee will not be able to login or clock in.",
+      "button": "Deactivate",
+      "failed": "Failed to deactivate"
+    }
+  },
+  "applications": {
+    "title": "Application Management",
+    "subtitle": "Review and approve time applications from employees",
+    "getFailed": "Failed to get application list:",
+    "list": {
+      "title": "Application List",
+      "selectedCount": "{count} selected",
+      "bulkApprove": "Bulk Approve",
+      "bulkApproving": "Bulk Approving...",
+      "empty": "No applications",
+      "worker": "Employee",
+      "duration": "Duration",
+      "approving": "Approving..."
+    },
+    "status": {
+      "all": "All",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "paymentRequested": "Payment Requested",
+      "paid": "Paid"
+    },
+    "types": {
+      "single": "Single Application",
+      "batch": "Batch Application",
+      "period": "Period Application"
+    },
+    "detail": {
+      "notFound": "Application not found",
+      "backToList": "← Back to Application List",
+      "title": "Application Details",
+      "applicationInfo": "Application Information",
+      "applicationType": "Application Type",
+      "targetPeriod": "Target Period",
+      "workHours": "Work Hours",
+      "hourlyRate": "Hourly Rate",
+      "salary": "Salary",
+      "rejectionReason": "Rejection Reason",
+      "applicationDate": "Application Date",
+      "timestampDetails": "Timestamp Details",
+      "approvalActions": "Approval Actions",
+      "getDetailFailed": "Failed to get application details"
+    },
+    "approval": {
+      "alreadyProcessed": "This application has already been processed",
+      "approve": "Approve",
+      "approving": "Approving...",
+      "reject": "Reject",
+      "rejectTitle": "Reject Application",
+      "rejectCategory": "Rejection Category",
+      "rejectReason": "Rejection Reason",
+      "rejectReasonHint": "Please enter a specific reason (so the employee can understand what to correct)",
+      "rejectReasonMin": "(10 characters or more)",
+      "minChars": "{count} characters or more",
+      "rejecting": "Rejecting...",
+      "categoryRequired": "Please select a rejection category",
+      "reasonRequired": "Rejection reason must be 10 characters or more",
+      "approveFailed": "Failed to approve",
+      "rejectFailed": "Failed to reject",
+      "bulkApproveFailed": "Failed to bulk approve",
+      "selectToApprove": "Please select applications to approve",
+      "approvalsFailed": "{count} approval(s) failed"
+    },
+    "rejectCategories": {
+      "timeError": "Time Error",
+      "timeErrorDesc": "Timestamp is incorrect",
+      "breakMissing": "Break Missing",
+      "breakMissingDesc": "Break timestamp not recorded",
+      "duplicate": "Duplicate",
+      "duplicateDesc": "Overlaps with already approved period",
+      "violation": "Violation",
+      "violationDesc": "Violates work regulations",
+      "other": "Other",
+      "otherDesc": "Other reason"
+    }
+  },
+  "timestamps": {
+    "work": "Work",
+    "rest": "Rest",
+    "end": "End",
+    "workStart": "Work Start",
+    "workEnd": "Work End",
+    "restStart": "Rest Start",
+    "workDesc": "Work (Start)",
+    "restDesc": "Rest (Start)",
+    "endDesc": "End (Finish)",
+    "clockedWork": "Work clocked in",
+    "clockedEnd": "End clocked in",
+    "clockedRest": "Rest clocked in",
+    "clockFailed": "Failed to clock",
+    "timestampStatus": "Timestamp Status",
+    "applicationStatus": "Application Status",
+    "noTimestamps": "No timestamps yet",
+    "edit": {
+      "title": "Edit Timestamp",
+      "dateLabel": "Date",
+      "timeLabel": "Time",
+      "statusLabel": "Status",
+      "memoLabel": "Memo",
+      "memoPlaceholder": "Enter memo...",
+      "memoHint": "You can optionally enter a memo",
+      "updateSuccess": "Timestamp updated",
+      "updateFailed": "Failed to update",
+      "consecutiveEndWarning": "This change will result in consecutive End timestamps. An End must be preceded by a Work or Rest."
+    },
+    "delete": {
+      "title": "Delete Timestamp",
+      "confirmMessage": "Are you sure you want to delete?",
+      "timeLabel": "Time:",
+      "statusLabel": "Status:",
+      "consecutiveEndWarning": "Deleting this timestamp will result in consecutive End timestamps. Cannot delete.",
+      "irreversibleWarning": "This action cannot be undone. The deletion will be recorded in the edit history.",
+      "deleteSuccess": "Timestamp deleted",
+      "deleteFailed": "Failed to delete"
+    },
+    "createFailed": "Failed to create timestamp",
+    "getFailed": "Failed to get timestamps",
+    "summaryFailed": "Failed to get summary",
+    "editHistoryFailed": "Failed to get edit history"
+  },
+  "timesheet": {
+    "title": "Timesheet",
+    "subtitle": "View and edit past timestamps",
+    "periodSelect": "Period Selection",
+    "timestampList": "Timestamp List",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "noHistory": "No timestamp history"
+  },
+  "todaySummary": {
+    "title": "Today's Summary",
+    "status": {
+      "notStarted": "Not Started",
+      "working": "Working",
+      "resting": "Resting",
+      "ended": "Ended"
+    },
+    "pendingWarning": {
+      "title": "Previous work session not ended",
+      "message": "{status} on {date} is not ended. Please edit if you forgot to clock.",
+      "dismiss": "Dismiss this warning"
+    },
+    "workTime": "Work Time",
+    "restTime": "Rest Time",
+    "actualTime": "Actual Work Time"
+  },
+  "workTimer": {
+    "currentStatus": "Current Status",
+    "idle": "Idle",
+    "elapsedTime": "Elapsed Time"
+  },
+  "dateNavigator": {
+    "previousDay": "Previous Day",
+    "nextDay": "Next Day"
+  },
+  "monthNavigator": {
+    "previousMonth": "Previous Month",
+    "nextMonth": "Next Month"
+  },
+  "editHistory": {
+    "title": "Edit History",
+    "titleWithDate": "Edit History for {date}",
+    "empty": "No edit history",
+    "changeDate": "Change Date",
+    "targetTimestamp": "Target Timestamp",
+    "operation": "Operation",
+    "before": "Before",
+    "after": "After",
+    "timestampTime": "Timestamp Time",
+    "delete": "Delete",
+    "newTimestamp": "New Timestamp",
+    "change": "Change"
+  },
+  "sessions": {
+    "title": "Work Sessions",
+    "totalCount": "Total: {count} items",
+    "totalWork": "Total Work: {hours}h {minutes}m",
+    "notApplied": "Not Applied: {count}",
+    "applying": "Applying: {count}",
+    "approved": "Approved: {count}",
+    "rejected": "Rejected: {count}",
+    "table": {
+      "date": "Date",
+      "start": "Start",
+      "end": "End",
+      "workTime": "Work Time",
+      "restTime": "Rest Time",
+      "status": "Status"
+    },
+    "status": {
+      "notApplied": "Not Applied",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "paymentRequested": "Payment Requested",
+      "paid": "Paid",
+      "incomplete": "Incomplete"
+    },
+    "rejectReasons": {
+      "timeError": "Time Error",
+      "breakMissing": "Break Missing",
+      "duplicate": "Duplicate",
+      "violation": "Violation"
+    },
+    "noData": "No data for this month",
+    "apply": "Apply",
+    "reapply": "Reapply",
+    "cancelApplication": "Cancel Application",
+    "cancelConfirm": "Cancel this application?",
+    "rejectionReason": "Rejection reason: {reason}",
+    "memoPlaceholder": "Enter memo...",
+    "applicationCreated": "Application created",
+    "applicationFailed": "Failed to create application",
+    "applicationCancelled": "Application cancelled",
+    "cancelFailed": "Failed to cancel application",
+    "getFailed": "Failed to get monthly sessions"
+  },
+  "applicationList": {
+    "title": "Application List",
+    "subtitle": "View work sessions and application status by month"
+  },
+  "timestampList": {
+    "notEnded": "Not Ended",
+    "approvalPending": "Pending",
+    "approved": "Approved",
+    "paymentPending": "Payment Pending",
+    "paid": "Paid"
+  },
+  "wallet": {
+    "title": "Wallet Settings",
+    "subtitle": "Manage XRP addresses for receiving salary",
+    "backToList": "Back to List",
+    "addAddress": "Add Address",
+    "getFailed": "Failed to get addresses",
+    "setDefaultSuccess": "Default address set",
+    "setDefaultFailed": "Failed to set",
+    "deleteSuccess": "Address deleted",
+    "deleteFailed": "Failed to delete",
+    "addNew": "Add New Address",
+    "registeredAddresses": "Registered Addresses",
+    "noAddresses": "Please register an XRP address to receive salary",
+    "addFirst": "Add First Address",
+    "form": {
+      "cryptoType": "Crypto Type",
+      "address": "Address",
+      "addressPlaceholder": "Starts with r...",
+      "addressHint": "XRP address starts with 'r'",
+      "label": "Label (Optional)",
+      "labelPlaceholder": "e.g., Main Wallet",
+      "setAsDefault": "Set as Default Address",
+      "addSuccess": "Address added",
+      "addFailed": "Failed to add address",
+      "rlusdLabel": "RLUSD (USD Stablecoin)",
+      "rlusdTrustlineNote": "To receive RLUSD, you must set up a trustline for RLUSD in your wallet beforehand. If the trustline is not configured, the transfer will fail."
+    },
+    "list": {
+      "label": "Label",
+      "crypto": "Crypto",
+      "address": "Address",
+      "status": "Status",
+      "operations": "Operations",
+      "cannotDeleteDefault": "Cannot delete default address",
+      "deleteConfirm": "Are you sure you want to delete?",
+      "empty": "No registered addresses",
+      "setDefault": "Set as Default"
+    },
+    "createFailed": "Failed to create address",
+    "updateFailed": "Failed to update address",
+    "gemwallet": {
+      "subtitle": "Connect GemWallet to import address and view balance",
+      "importTitle": "Import Address from GemWallet",
+      "importAsXrp": "Import as XRP Address",
+      "importAsRlusd": "Import as RLUSD Address",
+      "alreadyRegistered": "{cryptoType} Already Registered",
+      "importSuccess": "{cryptoType} address imported successfully",
+      "importFailed": "Failed to import address",
+      "importNote": "Import this address to receive salary payments"
+    }
+  },
+  "gemwallet": {
+    "connect": "Connect GemWallet",
+    "connecting": "Connecting...",
+    "disconnect": "Disconnect",
+    "connectedAs": "Connected as",
+    "connectionFailed": "Failed to connect GemWallet",
+    "notInstalled": "GemWallet extension is not installed. Please install it first.",
+    "connectToExecute": "Connect GemWallet to execute payment",
+    "executePayment": "Execute Payment with GemWallet",
+    "paymentDescription": "Connect your organization's GemWallet to sign and execute the payment",
+    "addressMismatch": "Connected wallet address does not match the organization wallet",
+    "expectedAddress": "Expected",
+    "confirmTitle": "Confirm Payment",
+    "confirm": "Confirm & Pay",
+    "executing": "Executing...",
+    "stepConnecting": "Connecting to GemWallet...",
+    "stepSigning": "Please sign the transaction in GemWallet...",
+    "stepConfirming": "Confirming transaction...",
+    "paymentFailed": "Payment failed"
+  },
+  "payments": {
+    "title": "Payment Management",
+    "subtitle": "Manage payment requests to employees",
+    "walletBalanceSection": "Wallet Balance Section",
+    "paymentRequests": "Payment Requests",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "status": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "list": {
+      "title": "Payment Request List",
+      "empty": "No payment requests",
+      "worker": "Employee",
+      "amountUsd": "Amount (USD)",
+      "crypto": "Crypto",
+      "requestDate": "Request Date"
+    },
+    "detail": {
+      "notFound": "Payment request not found",
+      "backToList": "← Back to Payment List",
+      "title": "Payment Details",
+      "paymentInfo": "Payment Information",
+      "destinationAddress": "Destination Address",
+      "amountUsd": "Amount (USD)",
+      "cryptoRate": "Crypto Rate",
+      "transferAmount": "Transfer Amount",
+      "transactionHash": "Transaction Hash",
+      "processedAt": "Processed At",
+      "requestedAt": "Requested At",
+      "relatedApplications": "Related Applications",
+      "paymentActions": "Payment Actions"
+    },
+    "execute": {
+      "processing": "Processing XRP transfer...",
+      "alreadyProcessed": "This payment has already been processed",
+      "button": "Execute Payment",
+      "description": "Funds will be transferred to the employee's wallet via XRP Ledger",
+      "confirmTitle": "Execute payment?",
+      "confirmMessage": "This action cannot be undone. The payment will be sent to the employee's crypto address.",
+      "failed": "Failed to execute payment"
+    },
+    "getFailed": "Failed to get payment request list:",
+    "getDetailFailed": "Failed to get payment request details"
+  },
+  "paymentReceive": {
+    "title": "Receive Payment",
+    "subtitle": "Select approved applications and receive salary in crypto",
+    "availableApplications": "Available Applications",
+    "receiveComplete": "Payment received successfully",
+    "pendingApproval": {
+      "title": "Payment Request Submitted",
+      "message": "Your payment request has been submitted. The administrator will process the payment using GemWallet. You will receive the funds once approved."
+    },
+    "cryptoSelect": {
+      "title": "Select Currency",
+      "xrpDesc": "Variable rate",
+      "rlusdDesc": "1:1 with USD",
+      "rlusdNote": "To receive RLUSD, you must have a trustline set up in your wallet. If no trustline is configured, the transfer will fail."
+    },
+    "completeDetails": {
+      "amount": "Amount",
+      "destination": "Destination",
+      "transaction": "Transaction"
+    },
+    "selector": {
+      "selectedCount": "{count} selected",
+      "selectApplications": "Select applications",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "select": "Select",
+      "date": "Date",
+      "workTime": "Work Time",
+      "amount": "Amount",
+      "status": "Status",
+      "noApplications": "No approved applications available for receiving"
+    },
+    "summary": {
+      "title": "Receive Summary + Button",
+      "receiveCrypto": "Receive Crypto",
+      "selectedApplications": "Selected Applications",
+      "totalAmount": "Total Amount",
+      "rate": "Rate",
+      "fetching": "Fetching...",
+      "fetchFailed": "Fetch Failed",
+      "receiveAmount": "Receive Amount",
+      "notice": "Will be sent to your default address for the selected currency. Please verify in Wallet settings. Transaction fee is covered by the company.",
+      "receiving": "Processing payment...",
+      "receiveButton": "Receive XRP",
+      "receiveButtonWithCrypto": "Receive {crypto}",
+      "selectApplications": "Please select applications to receive"
+    },
+    "history": {
+      "title": "Receive History",
+      "receiveDate": "Receive Date",
+      "amountUsd": "Amount (USD)",
+      "crypto": "Crypto",
+      "rate": "Rate",
+      "status": "Status",
+      "transaction": "Transaction",
+      "empty": "No receive history",
+      "cancelled": "Cancelled"
+    },
+    "receiveFailed": "Failed to receive XRP",
+    "getRateFailed": "Failed to get exchange rate",
+    "selectAtLeastOne": "Please select at least one application",
+    "getApprovedFailed": "Failed to get approved applications",
+    "createRequestFailed": "Failed to create payment request",
+    "getRequestsFailed": "Failed to get payment requests"
+  },
+  "availableBalance": {
+    "title": "Available Balance",
+    "usdEquivalent": "USD Equivalent",
+    "cryptoEquivalent": "Crypto Equivalent",
+    "rate": "Rate: 1 {crypto} = {rate}"
+  },
+  "walletBalance": {
+    "title": "Wallet Balance",
+    "fetching": "Fetching...",
+    "refresh": "Refresh",
+    "fetchingBalance": "Fetching wallet balance...",
+    "getFailed": "Failed to get wallet balance",
+    "noWallets": "No wallets registered. Please add a wallet from Crypto Settings.",
+    "perWallet": "Balance by Wallet",
+    "network": "Network",
+    "label": "Label",
+    "address": "Address",
+    "xrpBalance": "XRP Balance",
+    "usdBalance": "USD Balance",
+    "status": "Status",
+    "testnet": "Testnet",
+    "summary": {
+      "totalXrp": "Total XRP Balance",
+      "totalUsd": "Total USD Equivalent",
+      "rate": "XRP / USD Rate",
+      "rateUpdated": "Updated: {time}",
+      "rateFailed": "Failed to get rate"
+    }
+  },
+  "hashSearch": {
+    "title": "Hash Search",
+    "subtitle": "Search payment data using XRPL transaction MemoData hash",
+    "searchButton": "Search",
+    "searchFailed": "Search failed",
+    "searchError": "An error occurred during search",
+    "form": {
+      "label": "MemoData Hash Value",
+      "placeholder": "SHA-256 hash or MemoData hex string",
+      "hint": "Search by SHA-256 hash (64 chars) or XRPL transaction MemoData (hex-encoded string)",
+      "searching": "Searching..."
+    },
+    "result": {
+      "title": "Payment Data",
+      "recordedAt": "Recorded at: {date}",
+      "dataHash": "Data Hash",
+      "transactionHash": "Transaction Hash",
+      "paymentRequestId": "Payment Request ID",
+      "payerName": "Payer Name",
+      "worker": "Employee",
+      "usdAmount": "USD Amount",
+      "xrpAmount": "XRP Amount",
+      "xrpRate": "XRP Rate",
+      "destinationAddress": "Destination Address",
+      "timestamp": "Timestamp",
+      "applicationId": "Application ID",
+      "applicantName": "Applicant Name",
+      "verificationResult": "Verification Result",
+      "verified": "Verified",
+      "verificationFailed": "Verification Failed",
+      "resultsCount": "{count} result(s) found",
+      "noResults": "No matching data found"
+    },
+    "validation": {
+      "hashRequired": "Please enter hash value",
+      "hexRequired": "Please enter hex string",
+      "formatHint": "Please enter SHA-256 hash (64 chars) or MemoData hex string"
+    }
+  },
+  "organizationSettings": {
+    "title": "Organization Settings",
+    "subtitle": "Manage organization basic information",
+    "getFailed": "Failed to get organization information:",
+    "basicInfo": "Basic Information",
+    "organizationName": "Organization Name",
+    "organizationNamePlaceholder": "Enter organization name",
+    "organizationId": "Organization ID",
+    "organizationIdReadonly": "Organization ID cannot be changed",
+    "updateSuccess": "Organization information updated",
+    "updateFailed": "Failed to update",
+    "orgInfo": {
+      "title": "Organization Info",
+      "adminCount": "Admin Count",
+      "workerCount": "Employee Count",
+      "createdAt": "Created At",
+      "updatedAt": "Last Updated"
+    },
+    "validation": {
+      "nameRequired": "Organization name is required",
+      "nameMaxLength": "Organization name must be 100 characters or less"
+    }
+  },
+  "cryptoSettings": {
+    "title": "Crypto Settings",
+    "subtitle": "Manage XRP wallet and payment settings",
+    "walletManagement": "Wallet Management",
+    "paymentSecuritySettings": "Payment & Security Settings",
+    "getFailed": "Failed to get crypto settings:",
+    "updateSuccess": "Settings saved",
+    "updateFailed": "Failed to update",
+    "wallets": {
+      "title": "Wallet Management",
+      "addWallet": "Add Wallet",
+      "loading": "Loading...",
+      "getFailed": "Failed to get wallets",
+      "updateFailed": "Failed to update",
+      "deleteFailed": "Failed to delete"
+    },
+    "addWallet": {
+      "cryptoType": "Crypto Type",
+      "walletAddress": "Wallet Address",
+      "addressPlaceholder": "rXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "addressHint": "XRP address starts with 'r'",
+      "walletSecret": "Wallet Secret",
+      "secretPlaceholder": "sXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "secretHint": "Secret is encrypted with AES-256 and stored",
+      "label": "Label (Optional)",
+      "labelPlaceholder": "e.g., Main Wallet, Payroll Wallet",
+      "setAsDefault": "Set as Default Wallet",
+      "addSuccess": "Wallet added",
+      "addFailed": "Failed to add wallet"
+    },
+    "walletList": {
+      "label": "Label",
+      "crypto": "Crypto",
+      "address": "Address",
+      "balance": "Balance",
+      "status": "Status",
+      "operations": "Operations",
+      "cannotDeleteDefault": "Cannot delete default wallet",
+      "deleteConfirm": "Are you sure you want to delete?",
+      "empty": "No registered wallets",
+      "setDefault": "Set as Default"
+    },
+    "form": {
+      "autoPayment": "Auto Payment Settings",
+      "enableAutoPayment": "Enable Auto Payment",
+      "maxAutoPaymentAmount": "Max Auto Payment Amount (USD)",
+      "maxAutoPaymentHint": "Payments below this amount are processed automatically",
+      "dailyPaymentLimit": "Daily Payment Limit (count)",
+      "securitySettings": "Security Settings",
+      "dailyWithdrawLimit": "Daily Withdraw Limit (USD)",
+      "dailyWithdrawHint": "Leave empty for unlimited",
+      "newAddressLockTime": "Lock Time After New Address (hours)",
+      "newAddressLockHint": "Time to lock payments after new address registration",
+      "require2fa": "Require Two-Factor Authentication",
+      "saveButton": "Save Settings"
+    },
+    "validation": {
+      "addressRequired": "Wallet address is required",
+      "secretRequired": "Wallet secret is required",
+      "positiveValue": "Please enter a value of 0 or more",
+      "positiveInteger": "Please enter an integer of 1 or more",
+      "nonNegativeInteger": "Please enter an integer of 0 or more"
+    },
+    "tokenIssuer": {
+      "title": "Token Issuer Settings",
+      "subtitle": "Manage issuer addresses for tokens like RLUSD",
+      "addConfig": "Add Configuration",
+      "issuerAddress": "Issuer Address",
+      "issuerAddressHint": "XRPL address of the RLUSD token issuer",
+      "currencyCode": "Currency Code",
+      "network": "Network",
+      "sourceEnv": "Environment Variable",
+      "sourceDb": "Database",
+      "envNote": "This configuration is loaded from environment variables. Update the environment variable to change it.",
+      "noConfig": "No token issuer configuration",
+      "noConfigHint": "To use RLUSD, please configure the issuer address",
+      "createSuccess": "Token issuer configuration added",
+      "createFailed": "Failed to add token issuer configuration",
+      "updateFailed": "Failed to update token issuer configuration",
+      "deleteConfirm": "Are you sure you want to delete?",
+      "deleteSuccess": "Token issuer configuration deleted",
+      "deleteFailed": "Failed to delete token issuer configuration",
+      "getFailed": "Failed to get token issuer configuration"
+    },
+    "gemwalletImport": {
+      "title": "Import as Organization Wallet",
+      "description": "Import this GemWallet address as the organization's payment wallet. Payments will require manual approval via GemWallet.",
+      "importAsXrp": "Import as XRP Wallet",
+      "importAsRlusd": "Import as RLUSD Wallet",
+      "alreadyRegistered": "{cryptoType} Already Registered",
+      "importSuccess": "{cryptoType} wallet imported successfully",
+      "importFailed": "Failed to import wallet"
+    }
+  },
+  "walletConnection": {
+    "title": "Connect Wallet",
+    "subtitle": "Select a wallet to access XRP Ledger",
+    "sectionTitle": "Browser Wallet Connection",
+    "sectionSubtitle": "Connect your browser wallet extension to view RLUSD balance",
+    "connectButton": "Connect Wallet",
+    "connected": "Connected",
+    "disconnect": "Disconnect",
+    "connecting": "Connecting...",
+    "metamaskNotSupported": "EVM Wallet (Not Supported)",
+    "comingSoon": "Coming Soon",
+    "gemwalletDescription": "Browser extension wallet for XRP Ledger",
+    "gemwalletNotInstalled": "GemWallet is not installed.",
+    "installGemwallet": "Install here",
+    "cancel": "Cancel",
+    "balance": "Balance",
+    "fetchingBalance": "Fetching balance...",
+    "balanceFetchFailed": "Failed to fetch balance",
+    "refreshBalance": "Refresh Balance"
+  },
+  "companyInfo": {
+    "title": "Company Info",
+    "subtitle": "View your organization information",
+    "orgInfo": "Organization Info",
+    "notFound": "Organization information not found",
+    "getFailed": "Failed to get organization information",
+    "companyName": "Company Name",
+    "foundedDate": "Founded Date",
+    "employeeCount": "Employee Count"
+  },
+  "landingPage": {
+    "hero": {
+      "badge": "XRP Ledger Compatible",
+      "title1": "Payroll management,",
+      "title2": "to the next level.",
+      "subtitle": "Clock-in, apply, approve, pay. All in one platform. Transform traditional payroll with instant XRP transfers.",
+      "ctaStart": "Start for Free",
+      "ctaWorkerLogin": "Employee Login",
+      "noCreditCard": "No credit card required",
+      "instantSetup": "Instant setup"
+    },
+    "features": {
+      "poweredBy": "Powered by",
+      "xrpLedger": "XRP Ledger",
+      "encryption": "AES-256 Encryption",
+      "realTimeRate": "Real-time Exchange Rates"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "Simple 4 Steps",
+      "step1": {
+        "title": "Clock",
+        "description": "Record work time with 3 buttons: Work / Rest / End."
+      },
+      "step2": {
+        "title": "Apply",
+        "description": "Apply for salary with flexible styles: batch or period-based."
+      },
+      "step3": {
+        "title": "Approve",
+        "description": "Admin reviews and approves applications with one click."
+      },
+      "step4": {
+        "title": "Receive",
+        "description": "Receive salary instantly in XRP. Anytime you want."
+      }
+    },
+    "featuresSection": {
+      "title": "Features",
+      "subtitle": "Everything you need",
+      "description": "End-to-end support for payroll operations from attendance management to crypto payments.",
+      "realTimeClock": {
+        "title": "Real-time Clock",
+        "description": "Simple 3-button operation: Work, Rest, End. Real-time timer to check work hours instantly."
+      },
+      "flexibleApplication": {
+        "title": "Flexible Application Flow",
+        "description": "Supports single, batch, and period applications. Preview auto-calculated salary before submission."
+      },
+      "instantXrpTransfer": {
+        "title": "Instant XRP Transfer",
+        "description": "Convert to XRP at real-time exchange rates. Receive salary at speeds impossible with traditional bank transfers."
+      },
+      "onChainRecord": {
+        "title": "On-chain Record",
+        "description": "All transactions recorded on XRP Ledger. Tamper-proof and transparent salary history."
+      },
+      "globalTransfer": {
+        "title": "Global Transfer",
+        "description": "Support cross-border salary payments. Fast cross-border transfers with significantly reduced forex fees."
+      },
+      "dashboardManagement": {
+        "title": "Dashboard Management",
+        "description": "Centrally control employee invitations, clock verification, application approval, and payment management in one screen."
+      }
+    },
+    "stats": {
+      "clockTime": "Time to clock",
+      "clockTimeValue": "3 sec",
+      "paymentAvailability": "Payment available",
+      "paymentAvailabilityValue": "24/7",
+      "xrpSpeed": "XRP transfer speed",
+      "xrpSpeedValue": "3-5 sec",
+      "setupCost": "Initial setup cost",
+      "setupCostValue": "¥0"
+    },
+    "forAdmins": {
+      "title": "For Admins",
+      "subtitle": "Powerful tools for administrators",
+      "description": "From employee invitations to attendance management, application approval, and payment execution. Manage all workflows in one dashboard.",
+      "feature1": "Invite and manage employees by email",
+      "feature2": "Bulk approve/reject applications",
+      "feature3": "Organization XRP wallet settings",
+      "feature4": "Real-time attendance log verification",
+      "cta": "Register as Admin"
+    },
+    "forWorkers": {
+      "title": "For Workers",
+      "subtitle": "Stress-free for employees",
+      "description": "No complex operations. Clock with intuitive UI and receive salary as XRP whenever you want.",
+      "feature1": "One-tap clock start/end",
+      "feature2": "Real-time application status check",
+      "feature3": "Receive salary anytime",
+      "feature4": "Easy wallet settings from screen",
+      "cta": "Login as Employee"
+    },
+    "cta": {
+      "title1": "The future of payroll,",
+      "title2": "starts today.",
+      "description": "Create a free account and experience seamless payroll management with XRP.",
+      "ctaStart": "Start for Free",
+      "ctaWorkerLogin": "Employee Login"
+    },
+    "footer": {
+      "product": "Product",
+      "adminLogin": "Admin Login",
+      "workerLogin": "Employee Login",
+      "register": "Register",
+      "support": "Support",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "copyright": "Senecal rights reserved.",
+      "poweredBy": "Powered by XRP Ledger"
+    },
+    "preview": {
+      "workTime": "Work Time",
+      "thisMonthApplications": "This Month's Applications",
+      "xrpBalance": "XRP Balance",
+      "monthlyWorkHours": "Monthly Work Hours",
+      "working": "Working",
+      "applying": "Applying",
+      "approved": "Approved",
+      "adminDashboard": "Admin Dashboard",
+      "applicationList": "Application List",
+      "workerManagement": "Employee Management",
+      "payments": "Payments",
+      "workerDashboard": "Employee Dashboard",
+      "work": "Work",
+      "rest": "Rest",
+      "end": "End",
+      "recentApplications": "Recent Applications",
+      "paid": "Paid",
+      "approve": "Approve"
+    }
+  }
+}
