@@ -3,7 +3,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Token Wage - XRP Payroll Management",
+  title: "Seneca - XRP Payroll Management",
   description: "Manage employee time tracking and cryptocurrency payroll with XRP",
 };
 

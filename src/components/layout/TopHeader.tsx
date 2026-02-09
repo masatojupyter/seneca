@@ -14,7 +14,7 @@ export async function TopHeader(): Promise<React.JSX.Element> {
           href={ROUTES.HOME}
           className="text-xl font-bold bg-gradient-to-r from-purple-600 to-green-500 bg-clip-text text-transparent"
         >
-          Token Wage
+          Seneca
         </Link>
         <nav className="flex items-center gap-2 sm:gap-4">
           <LanguageSwitcher currentLocale={locale} />

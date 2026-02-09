@@ -66,7 +66,7 @@ function SidebarBrand({ onClose }: { onClose: () => void }): React.JSX.Element {
   return (
     <div className="h-16 flex items-center justify-between px-6 border-b border-gray-200">
       <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-green-500 bg-clip-text text-transparent">
-        Token Wage
+        Seneca
       </span>
       <button
         onClick={onClose}
