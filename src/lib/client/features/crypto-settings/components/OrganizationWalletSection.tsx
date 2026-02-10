@@ -79,7 +79,10 @@ export function OrganizationWalletSection(): React.JSX.Element {
     <Card>
       <Card.Header>
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-gray-900">{t('cryptoSettings.wallets.title')}</h2>
+          <div>
+            <h2 className="text-lg font-semibold text-gray-900">{t('cryptoSettings.wallets.title')}</h2>
+            <p className="mt-1 text-sm text-gray-600">{t('cryptoSettings.wallets.description')}</p>
+          </div>
           <Button
             size="sm"
             variant={showAddForm ? 'secondary' : 'primary'}

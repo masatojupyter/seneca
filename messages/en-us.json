@@ -807,6 +807,7 @@
     "updateFailed": "Failed to update",
     "wallets": {
       "title": "Wallet Management",
+      "description": "Payments are automatically processed from registered wallets when employees request withdrawals.",
       "addWallet": "Add Wallet",
       "loading": "Loading...",
       "getFailed": "Failed to get wallets",

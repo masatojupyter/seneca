@@ -1,15 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 import {
-  getCryptoSettingAction,
-  CryptoSettingsForm,
   OrganizationWalletSection,
-  TokenIssuerConfigSection,
   WalletConnectionSection,
 } from '@/lib/client/features/crypto-settings';
 
 export default async function CryptoSettingsPage(): Promise<React.JSX.Element> {
   const t = await getTranslations('cryptoSettings');
-  const result = await getCryptoSettingAction();
 
   return (
     <div className="space-y-8">
@@ -21,16 +17,6 @@ export default async function CryptoSettingsPage(): Promise<React.JSX.Element> {
       <WalletConnectionSection />
 
       <OrganizationWalletSection />
-
-      <TokenIssuerConfigSection />
-
-      {result.success ? (
-        <CryptoSettingsForm setting={result.data ?? null} />
-      ) : (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
-          {t('getFailed')} {result.error}
-        </div>
-      )}
     </div>
   );
 }
