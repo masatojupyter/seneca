@@ -1095,5 +1095,12 @@
         "footer": "This email was automatically sent from Seneca.\nIf you did not expect this email, please ignore it."
       }
     }
+  },
+  "usecase": {
+    "wallet": {
+      "invalidXrpAddress": "Invalid XRP address",
+      "invalidXrplAddress": "Invalid XRPL address",
+      "addressAlreadyRegistered": "This address is already registered"
+    }
   }
 }

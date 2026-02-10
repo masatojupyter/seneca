@@ -277,31 +277,21 @@ export function useGemWallet(): UseGemWalletReturn {
     console.log('[useGemWallet] disconnect: Done');
   }, [state.isInstalled]);
 
-  // 初期化時にインストール確認と自動再接続
+  // 初期化時にインストール確認のみ（自動再接続はしない）
+  // 自動再接続はgetAddress()がユーザー操作を必要とするため、
+  // ユーザーが明示的に接続ボタンをクリックした時のみ接続を試みる
   useEffect(() => {
     console.log('[useGemWallet] useEffect: Initializing...');
     const init = async (): Promise<void> => {
       console.log('[useGemWallet] init: Starting...');
       const installed = await checkInstalled();
       console.log('[useGemWallet] init: Installed =', installed);
-
-      // 以前接続していた場合は自動再接続を試みる
-      if (installed && typeof window !== 'undefined') {
-        const wasConnected = localStorage.getItem(STORAGE_KEY) === 'true';
-        console.log('[useGemWallet] init: wasConnected =', wasConnected);
-        if (wasConnected) {
-          console.log('[useGemWallet] init: Auto-reconnecting in 500ms...');
-          // 少し遅延させて拡張機能の準備を待つ
-          setTimeout(() => {
-            console.log('[useGemWallet] init: Calling connect()...');
-            connect();
-          }, 500);
-        }
-      }
+      // 注: 自動再接続は削除。getAddress()はユーザー操作が必要なため、
+      // ページロード時に自動実行するとタイムアウトエラーが発生する可能性がある
     };
 
     init();
-  }, [checkInstalled, connect]);
+  }, [checkInstalled]);
 
   // 支払いを実行
   const sendPayment = useCallback(async (params: SendPaymentParams): Promise<SendPaymentResult> => {

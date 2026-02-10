@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import {
   OrganizationWalletSection,
+  TokenIssuerConfigSection,
   WalletConnectionSection,
 } from '@/lib/client/features/crypto-settings';
 
@@ -15,6 +16,8 @@ export default async function CryptoSettingsPage(): Promise<React.JSX.Element> {
       </div>
 
       <WalletConnectionSection />
+
+      <TokenIssuerConfigSection />
 
       <OrganizationWalletSection />
     </div>

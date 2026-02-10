@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { prisma } from '@/lib/server/infra/prisma';
 import { encrypt } from '@/lib/server/infra/encryption';
 
@@ -27,11 +28,12 @@ const XRP_ADDRESS_REGEX = /^r[1-9A-HJ-NP-Za-km-z]{24,34}$/;
  * 組織ウォレットを作成
  */
 export async function createOrganizationWallet(input: CreateOrganizationWalletInput): Promise<CreatedWallet> {
+  const t = await getTranslations('usecase.wallet');
   const { organizationId, cryptoType, walletAddress, walletSecret, label, isDefault = false } = input;
 
   // XRPアドレスのバリデーション
   if (cryptoType === 'XRP' && !XRP_ADDRESS_REGEX.test(walletAddress)) {
-    throw new Error('無効なXRPアドレスです');
+    throw new Error(t('invalidXrpAddress'));
   }
 
   // 同じアドレスが既に登録されていないか確認
@@ -40,7 +42,7 @@ export async function createOrganizationWallet(input: CreateOrganizationWalletIn
   });
 
   if (existing) {
-    throw new Error('このアドレスは既に登録されています');
+    throw new Error(t('addressAlreadyRegistered'));
   }
 
   // 既存のウォレット数を確認（最初のウォレットは自動的にデフォルト）

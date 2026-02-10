@@ -1095,5 +1095,12 @@
         "footer": "このメールは Seneca システムから自動送信されています。\n心当たりがない場合は、このメールを無視してください。"
       }
     }
+  },
+  "usecase": {
+    "wallet": {
+      "invalidXrpAddress": "無効なXRPアドレスです",
+      "invalidXrplAddress": "無効なXRPLアドレスです",
+      "addressAlreadyRegistered": "このアドレスは既に登録されています"
+    }
   }
 }

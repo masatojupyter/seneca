@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server';
 import { prisma } from '@/lib/server/infra/prisma';
 import type { CryptoType } from '@/lib/shared/entity';
 
@@ -36,11 +37,12 @@ function validateXrplAddress(address: string): boolean {
 export async function createCryptoAddress(
   input: CreateCryptoAddressInput
 ): Promise<CryptoAddress> {
+  const t = await getTranslations('usecase.wallet');
   const { workerId, cryptoType, address, label, isDefault = false } = input;
 
   // アドレスのバリデーション（XRPとRLUSDは同じXRPLアドレス形式）
   if ((cryptoType === 'XRP' || cryptoType === 'RLUSD') && !validateXrplAddress(address)) {
-    throw new Error('無効なXRPLアドレスです');
+    throw new Error(t('invalidXrplAddress'));
   }
 
   // 同じアドレスが既に登録されていないか確認
@@ -52,7 +54,7 @@ export async function createCryptoAddress(
   });
 
   if (existing) {
-    throw new Error('このアドレスは既に登録されています');
+    throw new Error(t('addressAlreadyRegistered'));
   }
 
   // デフォルトに設定する場合、既存のデフォルトを解除
