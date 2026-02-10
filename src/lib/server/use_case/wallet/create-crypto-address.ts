@@ -45,10 +45,11 @@ export async function createCryptoAddress(
     throw new Error(t('invalidXrplAddress'));
   }
 
-  // 同じアドレスが既に登録されていないか確認
+  // 同じアドレス・暗号資産タイプの組み合わせが既に登録されていないか確認
   const existing = await prisma.cryptoAddress.findFirst({
     where: {
       workerId,
+      cryptoType,
       address,
     },
   });
