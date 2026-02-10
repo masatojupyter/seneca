@@ -3,6 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ['xrpl', 'ws', '@xrplf/isomorphic'],
+  devIndicators: false,
 };
 
 const withNextIntl = createNextIntlPlugin();
