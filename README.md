@@ -61,7 +61,7 @@ Modern payroll management system powered by XRP Ledger. Track employee time, man
    npm run db:push
 
    # Initialize TimescaleDB
-   docker exec -i seneca-timescale psql -U postgres -d seneca_ts < scripts/init-timescale.sql
+   psql "postgresql://postgres:postgres@localhost:5433/seneca_ts" -f ./scripts/init-timescaledb-all.sql
 
    # (Optional) Seed database with sample data
    npm run db:seed
