@@ -1,7 +1,10 @@
 import { prisma } from '@/lib/server/infra/prisma';
 import bcrypt from 'bcryptjs';
 import { ConflictError, ValidationError } from '@/lib/server/errors';
-import { sendAdminVerificationEmail } from '@/lib/server/gateway/email-gateway';
+import {
+  sendAdminVerificationEmail,
+  type EmailLocale,
+} from '@/lib/server/gateway/email-gateway';
 import { getEmailGateway } from '@/lib/server/infra/nodemailer';
 
 type RegisterAdminInput = {
@@ -9,6 +12,7 @@ type RegisterAdminInput = {
   password: string;
   name: string;
   organizationName: string;
+  locale: EmailLocale;
 };
 
 type RegisterAdminOutput = {
@@ -21,7 +25,7 @@ const PASSWORD_HASH_ROUNDS = 12;
 const VERIFICATION_TOKEN_EXPIRY_MINUTES = 30;
 
 export async function registerAdmin(input: RegisterAdminInput): Promise<RegisterAdminOutput> {
-  const { email, password, name, organizationName } = input;
+  const { email, password, name, organizationName, locale } = input;
 
   // パスワードの強度チェック
   if (password.length < 8) {
@@ -138,6 +142,7 @@ export async function registerAdmin(input: RegisterAdminInput): Promise<Register
     name,
     verificationToken: result.verificationToken,
     baseUrl,
+    locale,
   });
   const duration = Date.now() - startTime;
   console.log(`[RegisterAdmin] Email sending finished in ${duration}ms.`);

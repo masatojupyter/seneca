@@ -1057,5 +1057,26 @@
       "paid": "Paid",
       "approve": "Approve"
     }
+  },
+  "emails": {
+    "adminVerification": {
+      "subject": "Email Verification - Seneca",
+      "title": "Email Verification",
+      "greeting": "{name}",
+      "body": "Thank you for registering with Seneca.<br>Please click the button below to verify your email address.",
+      "buttonText": "Verify Email",
+      "fallbackText": "If the button doesn't work, please copy and paste the following URL into your browser:",
+      "warningTitle": "Note:",
+      "warningBody": "This link is valid for 30 minutes.<br>If it expires, please register again.",
+      "footer": "This email was automatically sent from Seneca.<br>If you did not expect this email, please ignore it."
+    },
+    "plainText": {
+      "adminVerification": {
+        "title": "Seneca Email Verification",
+        "body": "Thank you for registering with Seneca.\nPlease visit the following URL to verify your email address.",
+        "warning": "Note: This link is valid for 30 minutes.\nIf it expires, please register again.",
+        "footer": "This email was automatically sent from Seneca.\nIf you did not expect this email, please ignore it."
+      }
+    }
   }
 }

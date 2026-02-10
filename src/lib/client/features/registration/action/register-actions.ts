@@ -1,7 +1,18 @@
 'use server';
 
 import { z } from 'zod';
+import { cookies } from 'next/headers';
 import { registerAdmin } from '@/lib/server/use_case/auth/register-admin';
+import type { EmailLocale } from '@/lib/server/gateway/email-gateway';
+
+const LOCALE_COOKIE_NAME = 'NEXT_LOCALE';
+const DEFAULT_LOCALE: EmailLocale = 'en-us';
+
+async function getLocaleFromCookies(): Promise<EmailLocale> {
+  const cookieStore = await cookies();
+  const cookieLocale = cookieStore.get(LOCALE_COOKIE_NAME)?.value;
+  return cookieLocale === 'ja-jp' ? 'ja-jp' : DEFAULT_LOCALE;
+}
 
 const registerSchema = z.object({
   email: z.string().email('有効なメールアドレスを入力してください'),
@@ -30,12 +41,16 @@ export async function registerAdminAction(data: RegisterInput): Promise<Register
     // バリデーション
     const validatedData = registerSchema.parse(data);
 
+    // ロケールを取得
+    const locale = await getLocaleFromCookies();
+
     // 管理者登録
     const result = await registerAdmin({
       email: validatedData.email,
       password: validatedData.password,
       name: validatedData.name,
       organizationName: validatedData.organizationName,
+      locale,
     });
 
     // 本来はここでメール送信処理を行う
