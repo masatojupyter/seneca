@@ -12,11 +12,9 @@ import {
   DeleteConfirmModal,
   WorkTimer,
   TodaySummary,
-  AvailableBalance,
   DateNavigator,
   createTimestampAction,
   getTodaySummaryAction,
-  getAvailableBalanceAction,
   getTimestampsByDateAction,
   getEditHistoryByDateAction,
   updateTimestampAction,
@@ -137,14 +135,11 @@ export default function WorkerDashboardPage(): React.JSX.Element {
         <>
           <WorkTimer timestamps={timestamps} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <TodaySummary
-              onGetSummary={getTodaySummaryAction}
-              onStatusChange={setCurrentStatus}
-              refreshTrigger={refreshTrigger}
-            />
-            <AvailableBalance onGetBalance={getAvailableBalanceAction} />
-          </div>
+          <TodaySummary
+            onGetSummary={getTodaySummaryAction}
+            onStatusChange={setCurrentStatus}
+            refreshTrigger={refreshTrigger}
+          />
 
           <Card>
             <Card.Header>
