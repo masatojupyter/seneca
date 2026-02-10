@@ -154,23 +154,12 @@ export function WorkerGemWalletSection({
     <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
       <Card.Header>
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-lg">
-            <svg
-              viewBox="0 0 40 40"
-              className="w-6 h-6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="40" height="40" rx="8" fill="#0066FF" />
-              <path
-                d="M20 8L12 14V26L20 32L28 26V14L20 8Z"
-                fill="white"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinejoin="round"
-              />
-              <circle cx="20" cy="20" r="4" fill="#0066FF" />
-            </svg>
+          <div className="w-10 h-10 flex items-center justify-center rounded-lg overflow-hidden">
+            <img
+              src="/icons/wallets/gemwallet_logo.svg"
+              alt="GemWallet"
+              className="w-10 h-10"
+            />
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-900">{t('sectionTitle')}</h3>
