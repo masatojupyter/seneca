@@ -3,7 +3,7 @@ import { getRequestConfig } from 'next-intl/server';
 
 type Locale = 'en-us' | 'ja-jp';
 const LOCALE_COOKIE_NAME = 'NEXT_LOCALE';
-const DEFAULT_LOCALE: Locale = 'ja-jp';
+const DEFAULT_LOCALE: Locale = 'en-us';
 
 export default getRequestConfig(async () => {
   const cookieStore = await cookies();
