@@ -12,7 +12,7 @@ export default async function RegisterPage(): Promise<React.JSX.Element> {
     <div className="min-h-screen bg-gray-50">
       <TopHeader />
       <div className="flex items-center justify-center pt-24 pb-12 sm:pt-28">
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" className="min-w-[380px]">
         <Card>
           <CardHeader>
             <h1 className="text-2xl font-bold text-center text-gray-900">
