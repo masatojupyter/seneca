@@ -587,7 +587,24 @@
     "stepConnecting": "Connecting to GemWallet...",
     "stepSigning": "Please sign the transaction in GemWallet...",
     "stepConfirming": "Confirming transaction...",
-    "paymentFailed": "Payment failed"
+    "paymentFailed": "Payment failed",
+    "hook": {
+      "timeout": "{operation} timed out ({seconds} seconds). Please check the GemWallet popup.",
+      "notInstalledError": "GemWallet is not installed",
+      "getAddressFailed": "Failed to get address",
+      "connectionCancelled": "Connection was cancelled",
+      "connectionFailed": "Connection failed. Please check that GemWallet is unlocked.",
+      "notConnected": "Not connected to GemWallet",
+      "issuerRequired": "Issuer address is required for token transfers",
+      "paymentCancelledOrFailed": "Payment was cancelled or failed",
+      "paymentFailed": "Payment failed",
+      "operations": {
+        "getNetwork": "Get network",
+        "getAddress": "Get address",
+        "getPublicKey": "Get public key",
+        "payment": "Payment"
+      }
+    }
   },
   "payments": {
     "title": "Payment Management",

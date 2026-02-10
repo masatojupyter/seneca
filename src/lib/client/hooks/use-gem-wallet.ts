@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { isInstalled, getAddress, getNetwork, getPublicKey, sendPayment as gemSendPayment } from '@gemwallet/api';
 import type { SendPaymentRequest } from '@gemwallet/api';
 
@@ -10,11 +11,11 @@ export type NetworkType = 'Mainnet' | 'Testnet' | 'Devnet' | 'NFTDevnet' | null;
 function withTimeout<T>(
   promise: Promise<T>,
   timeoutMs: number,
-  operationName: string
+  timeoutMessage: string
 ): Promise<T> {
   return new Promise((resolve, reject) => {
     const timeoutId = setTimeout(() => {
-      reject(new Error(`${operationName}がタイムアウトしました（${timeoutMs / 1000}秒）。GemWalletのポップアップを確認してください。`));
+      reject(new Error(timeoutMessage));
     }, timeoutMs);
 
     promise
@@ -72,6 +73,7 @@ const STORAGE_KEY = 'gem-wallet-connected';
  */
 export function useGemWallet(): UseGemWalletReturn {
   console.log('[useGemWallet] Hook initialized');
+  const t = useTranslations('gemwallet.hook');
 
   const [state, setState] = useState<GemWalletState>({
     isInstalled: false,
@@ -111,7 +113,7 @@ export function useGemWallet(): UseGemWalletReturn {
       const response = await withTimeout(
         getNetwork(),
         10000, // 10秒
-        'ネットワーク取得'
+        t('timeout', { operation: t('operations.getNetwork'), seconds: 10 })
       );
       console.log('[useGemWallet] refreshNetwork: Response:', response);
       const networkResult = response.result;
@@ -127,7 +129,7 @@ export function useGemWallet(): UseGemWalletReturn {
     } catch (error) {
       console.error('[useGemWallet] refreshNetwork: Error:', error);
     }
-  }, []);
+  }, [t]);
 
   // ウォレットに接続
   const connect = useCallback(async (): Promise<boolean> => {
@@ -144,7 +146,7 @@ export function useGemWallet(): UseGemWalletReturn {
         setState((prev) => ({
           ...prev,
           isConnecting: false,
-          error: 'Gem Walletがインストールされていません',
+          error: t('notInstalledError'),
         }));
         return false;
       }
@@ -159,11 +161,11 @@ export function useGemWallet(): UseGemWalletReturn {
         addressResponse = await withTimeout(
           getAddress(),
           CONNECTION_TIMEOUT,
-          'アドレス取得'
+          t('timeout', { operation: t('operations.getAddress'), seconds: CONNECTION_TIMEOUT / 1000 })
         );
       } catch (timeoutError) {
         console.error('[useGemWallet] connect: getAddress() timeout or error:', timeoutError);
-        const errorMessage = timeoutError instanceof Error ? timeoutError.message : 'アドレス取得に失敗しました';
+        const errorMessage = timeoutError instanceof Error ? timeoutError.message : t('getAddressFailed');
         setState((prev) => ({
           ...prev,
           isConnecting: false,
@@ -178,7 +180,7 @@ export function useGemWallet(): UseGemWalletReturn {
         setState((prev) => ({
           ...prev,
           isConnecting: false,
-          error: '接続がキャンセルされました',
+          error: t('connectionCancelled'),
         }));
         return false;
       }
@@ -190,7 +192,7 @@ export function useGemWallet(): UseGemWalletReturn {
         const publicKeyResponse = await withTimeout(
           getPublicKey(),
           10000, // 10秒
-          '公開鍵取得'
+          t('timeout', { operation: t('operations.getPublicKey'), seconds: 10 })
         );
         console.log('[useGemWallet] connect: PublicKey response:', publicKeyResponse);
         publicKey = publicKeyResponse.result?.publicKey ?? null;
@@ -207,7 +209,7 @@ export function useGemWallet(): UseGemWalletReturn {
         const networkResponse = await withTimeout(
           getNetwork(),
           10000, // 10秒
-          'ネットワーク取得'
+          t('timeout', { operation: t('operations.getNetwork'), seconds: 10 })
         );
         console.log('[useGemWallet] connect: Network response:', networkResponse);
         network = (networkResponse.result?.network as NetworkType) ?? null;
@@ -243,7 +245,7 @@ export function useGemWallet(): UseGemWalletReturn {
       if (error instanceof Error) {
         message = error.message;
       } else {
-        message = '接続に失敗しました。GemWalletがアンロックされているか確認してください。';
+        message = t('connectionFailed');
       }
       console.log('[useGemWallet] connect: Error message:', message);
       setState((prev) => ({
@@ -253,7 +255,7 @@ export function useGemWallet(): UseGemWalletReturn {
       }));
       return false;
     }
-  }, [checkInstalled]);
+  }, [checkInstalled, t]);
 
   // 切断
   const disconnect = useCallback((): void => {
@@ -307,7 +309,7 @@ export function useGemWallet(): UseGemWalletReturn {
 
     if (!state.isConnected) {
       console.log('[useGemWallet] sendPayment: Not connected');
-      return { success: false, error: 'GemWalletに接続されていません' };
+      return { success: false, error: t('notConnected') };
     }
 
     try {
@@ -328,7 +330,7 @@ export function useGemWallet(): UseGemWalletReturn {
         // トークンの場合: IssuedCurrencyAmount形式
         if (!params.issuer) {
           console.log('[useGemWallet] sendPayment: Missing issuer for token payment');
-          return { success: false, error: 'トークン送金には発行者アドレスが必要です' };
+          return { success: false, error: t('issuerRequired') };
         }
         amount = {
           currency: params.currency,
@@ -349,7 +351,7 @@ export function useGemWallet(): UseGemWalletReturn {
       const response = await withTimeout(
         gemSendPayment(paymentRequest),
         CONNECTION_TIMEOUT * 2, // 支払いは長めのタイムアウト
-        '支払い'
+        t('timeout', { operation: t('operations.payment'), seconds: (CONNECTION_TIMEOUT * 2) / 1000 })
       );
 
       console.log('[useGemWallet] sendPayment: Response:', response);
@@ -359,14 +361,14 @@ export function useGemWallet(): UseGemWalletReturn {
         return { success: true, hash: response.result.hash };
       } else {
         console.log('[useGemWallet] sendPayment: No hash in response, payment may have been rejected');
-        return { success: false, error: '支払いがキャンセルされたか、失敗しました' };
+        return { success: false, error: t('paymentCancelledOrFailed') };
       }
     } catch (error) {
       console.error('[useGemWallet] sendPayment: Error:', error);
-      const message = error instanceof Error ? error.message : '支払いに失敗しました';
+      const message = error instanceof Error ? error.message : t('paymentFailed');
       return { success: false, error: message };
     }
-  }, [state.isConnected]);
+  }, [state.isConnected, t]);
 
   console.log('[useGemWallet] Returning state and functions');
   return {

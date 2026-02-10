@@ -587,7 +587,24 @@
     "stepConnecting": "GemWalletに接続中...",
     "stepSigning": "GemWalletでトランザクションに署名してください...",
     "stepConfirming": "トランザクションを確認中...",
-    "paymentFailed": "支払いに失敗しました"
+    "paymentFailed": "支払いに失敗しました",
+    "hook": {
+      "timeout": "{operation}がタイムアウトしました（{seconds}秒）。GemWalletのポップアップを確認してください。",
+      "notInstalledError": "GemWalletがインストールされていません",
+      "getAddressFailed": "アドレス取得に失敗しました",
+      "connectionCancelled": "接続がキャンセルされました",
+      "connectionFailed": "接続に失敗しました。GemWalletがアンロックされているか確認してください。",
+      "notConnected": "GemWalletに接続されていません",
+      "issuerRequired": "トークン送金には発行者アドレスが必要です",
+      "paymentCancelledOrFailed": "支払いがキャンセルされたか、失敗しました",
+      "paymentFailed": "支払いに失敗しました",
+      "operations": {
+        "getNetwork": "ネットワーク取得",
+        "getAddress": "アドレス取得",
+        "getPublicKey": "公開鍵取得",
+        "payment": "支払い"
+      }
+    }
   },
   "payments": {
     "title": "支払い管理",
