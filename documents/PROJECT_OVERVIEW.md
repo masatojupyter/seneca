@@ -748,4 +748,4 @@ We plan to apply for **XRPL Grants** to fund:
 
 *Built with ❤️ for HAKS 2026*
 
-🔗 [Live Demo](https://seneca.vercel.app) | 📁 [GitHub](https://github.com/YOUR_USERNAME/seneca) | 📹 [Video Demo](https://youtube.com/watch?v=DEMO_VIDEO_ID)
+🔗 📁 [GitHub](https://github.com/masatojupyter/seneca) | 📹 [Video Demo](https://www.youtube.com/watch?v=CPp9uZXumJU)
