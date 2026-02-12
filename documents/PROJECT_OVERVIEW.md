@@ -119,6 +119,98 @@ Seneca effectively leverages multiple XRP Ledger capabilities:
 
 > **Technical Details**: See [TECHNICAL.md](./TECHNICAL.md) for implementation details, code examples, and architecture diagrams.
 
+### 4.1 Transaction Memos and Data Verification
+
+Seneca leverages XRPL's transaction memo feature to create an immutable audit trail that links blockchain transactions to internal payment records.
+
+#### How It Works
+
+When a payment is executed, Seneca generates a SHA256 hash of the payment data and stores it in the XRPL transaction memo field:
+
+```mermaid
+flowchart LR
+    subgraph Seneca["Seneca Application"]
+        PD[Payment Data<br/>amount, worker, timestamp...]
+        HASH[SHA256 Hash]
+        DB[(Database<br/>Store hash + data)]
+    end
+
+    subgraph XRPL["XRP Ledger"]
+        MEMO[Transaction Memo<br/>MemoType: payment_hash<br/>MemoData: sha256...]
+        TX[Transaction Record]
+    end
+
+    PD --> HASH
+    HASH --> MEMO
+    HASH --> DB
+    MEMO --> TX
+```
+
+#### Payment Data Hash Structure
+
+The hash is computed from the following payment information:
+
+| Field | Description |
+|-------|-------------|
+| `paymentId` | Unique payment identifier in Seneca |
+| `workerId` | Worker receiving the payment |
+| `amount` | Payment amount (in USD) |
+| `cryptoAmount` | Crypto amount sent (XRP or RLUSD) |
+| `cryptoType` | Currency type (XRP or RLUSD) |
+| `exchangeRate` | Rate at time of payment |
+| `timestamp` | ISO 8601 timestamp |
+
+#### Transaction Memo Format
+
+```json
+{
+  "MemoType": "payment_hash",
+  "MemoData": "sha256:a1b2c3d4e5f6..."
+}
+```
+
+The memo is hex-encoded per XRPL specification and stored permanently on the ledger.
+
+#### Searching Payment Data by Hash
+
+Users can search for payment records using the hash value from any XRPL transaction:
+
+1. **View Transaction on XRPL Explorer** – Find the transaction hash
+2. **Extract MemoData** – Copy the SHA256 hash from the memo
+3. **Search in Seneca** – Use the hash to retrieve the original payment details
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Explorer as XRPL Explorer
+    participant Seneca as Seneca
+    participant DB as Database
+
+    User->>Explorer: View transaction
+    Explorer-->>User: MemoData: sha256:abc123...
+    User->>Seneca: Search by hash: abc123...
+    Seneca->>DB: Query by payment_hash
+    DB-->>Seneca: Payment record
+    Seneca-->>User: Display payment details
+```
+
+#### Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| **Immutable Proof** | Hash on XRPL cannot be altered after transaction |
+| **Data Integrity** | Any change to payment data would produce a different hash |
+| **Privacy** | Only the hash is public; actual data stays in Seneca |
+| **Audit Trail** | Employers and workers can verify payment authenticity |
+| **Dispute Resolution** | Blockchain-backed proof of payment terms |
+
+#### Use Cases
+
+- **Tax Audits**: Provide verifiable proof of payment amounts and dates
+- **Dispute Resolution**: Prove exact payment terms recorded at transaction time
+- **Compliance**: Demonstrate immutable record-keeping for regulatory requirements
+- **Reconciliation**: Match XRPL transactions to internal accounting records
+
 ---
 
 ## 5. User Flow / How It Works
