@@ -9,7 +9,7 @@ Modern payroll management system powered by XRP Ledger. Track employee time, man
 
 - [Project Overview](documents/PROJECT_OVERVIEW.md) - Project goals and features
 - [Technical Documentation](documents/TECHNICAL.md) - Technical architecture and design
-- [Video Demo](https://www.youtube.com/watch?v=CPp9uZXumJU) - Watch the demo video
+- <a href="https://www.youtube.com/watch?v=CPp9uZXumJU" target="_blank" rel="noopener noreferrer">Video Demo</a> - Watch the demo video
 
 ## 🚀 Quick Start
 

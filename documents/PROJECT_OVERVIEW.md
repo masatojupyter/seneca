@@ -95,7 +95,6 @@ flowchart LR
     XRP --> GW
     XRP --> HW
     RLUSD --> GW
-    RLUSD --> HW
     GW --> Submit
     HW --> Submit
     Submit --> Confirm
@@ -748,4 +747,4 @@ We plan to apply for **XRPL Grants** to fund:
 
 *Built with ❤️ for HAKS 2026*
 
-🔗 📁 [GitHub](https://github.com/masatojupyter/seneca) | 📹 [Video Demo](https://www.youtube.com/watch?v=CPp9uZXumJU)
+🔗 📁 [GitHub](https://github.com/masatojupyter/seneca) | 📹 <a href="https://www.youtube.com/watch?v=CPp9uZXumJU" target="_blank" rel="noopener noreferrer">Video Demo</a> - Watch the demo video
