@@ -21,7 +21,7 @@ Modern payroll management system powered by XRP Ledger. Track employee time, man
 
 1. **Clone and install dependencies**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/masatojupyter/seneca.git
    cd seneca
    npm install --legacy-peer-deps
    ```
